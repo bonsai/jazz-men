@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "edition": "japan",
   "language": "ja",
-  "artist_count": 13,
+  "artist_count": 20,
   "artists": [
     {
       "id": "masayuki-takayanagi",
@@ -227,6 +227,127 @@
       ],
       "youtube_search": "Toshiyuki Honda saxophone live Burnin Waves",
       "youtube_search_url": "https://www.youtube.com/results?search_query=Toshiyuki%20Honda%20saxophone%20live%20Burnin%20Waves"
+    },
+    {
+      "id": "mototeru-takagi",
+      "name": "高木元輝",
+      "name_en": "Mototeru Takagi",
+      "instrument": [
+        "テナーサックス",
+        "ソプラノサックス"
+      ],
+      "profile": "日本のフリージャズ黎明期を支えたサックス奏者。山下洋輔トリオなどで活動し、鋭い音圧と奔放な即興で、当時のジャズの枠を押し広げた。記録に残る演奏は多くないが、日本の初期フリージャズを語るうえで欠かせない存在。",
+      "albums": [
+        "フリー・ジャズ大祭 (関連演奏)",
+        "The Trio (山下洋輔トリオ関連)",
+        "幻のライブ音源・コンピレーション"
+      ],
+      "youtube_search": "Mototeru Takagi free jazz saxophone",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Mototeru%20Takagi%20free%20jazz%20saxophone"
+    },
+    {
+      "id": "kazutoki-umezu",
+      "name": "梅津和時",
+      "name_en": "Kazutoki Umezu",
+      "instrument": [
+        "アルトサックス",
+        "ソプラノサックス",
+        "クラリネット",
+        "バスクラリネット"
+      ],
+      "profile": "フリージャズからロック、歌謡、祭囃子までを自在に往来するサックス奏者。生活向上委員会大ֶ楽団、ドクトル梅津バンド、こまっちゃクレズマなど多彩な編成で、鋭さとユーモアを同居させてきた。",
+      "albums": [
+        "D・D・D (生活向上委員会大楽団)",
+        "ずんずん (ドクトル梅津バンド)",
+        "こまっちゃクレズマの作品群"
+      ],
+      "youtube_search": "Kazutoki Umezu live saxophone",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Kazutoki%20Umezu%20live%20saxophone"
+    },
+    {
+      "id": "takeo-moriyama",
+      "name": "森山威男",
+      "name_en": "Takeo Moriyama",
+      "instrument": [
+        "ドラム",
+        "パーカッション"
+      ],
+      "profile": "山下洋輔トリオの黄金期を支えたドラマー。強靭な推進力と奔放な打撃で、ドラムをリズムの伴奏から音楽を切り開く主役へと押し上げた。フリージャズの熱量と日本的な間合いが交差する演奏が魅力。",
+      "albums": [
+        "ミナのセカンド・テーマ (山下洋輔トリオ)",
+        "Smash (森山威男)",
+        "Hush-A-Bye"
+      ],
+      "youtube_search": "Takeo Moriyama drums free jazz live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Takeo%20Moriyama%20drums%20free%20jazz%20live"
+    },
+    {
+      "id": "satoko-fujii",
+      "name": "藤井郷子",
+      "name_en": "Satoko Fujii",
+      "instrument": [
+        "ピアノ",
+        "作曲"
+      ],
+      "profile": "即興と緻密な作曲を往復するピアニスト・作曲家。ソロから小編成、各地のジャズ・オーケストラまで活動の幅は広く、複雑な構造の中にも大胆な自由さとユーモアを宿す。現代日本の実験的ジャズを国際的に牽引する存在。",
+      "albums": [
+        "Something About Water (1996)",
+        "全方位美人 (2002)",
+        "人間万事塞翁が馬 (2004)"
+      ],
+      "youtube_search": "Satoko Fujii piano orchestra live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Satoko%20Fujii%20piano%20orchestra%20live"
+    },
+    {
+      "id": "natsuki-tamura",
+      "name": "田村夏樹",
+      "name_en": "Natsuki Tamura",
+      "instrument": [
+        "トランペット"
+      ],
+      "profile": "拡張奏法や独自の音色操作を駆使し、詩情と破壊力を同じトランペットから引き出す即興演奏家。藤井郷子とのデュオやカルテットKAZEなどで、作曲と自由な即興の境界を探り続ける。",
+      "albums": [
+        "Tobifudo (1992)",
+        "How Many? (with Satoko Fujii, 1997)",
+        "Keshin (with Satoko Fujii, 2021)"
+      ],
+      "youtube_search": "Natsuki Tamura trumpet free improvisation live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Natsuki%20Tamura%20trumpet%20free%20improvisation%20live"
+    },
+    {
+      "id": "junji-hirose",
+      "name": "広瀬淳二",
+      "name_en": "Junji Hirose",
+      "instrument": [
+        "テナーサックス",
+        "ソプラノサックス",
+        "自作ノイズ楽器"
+      ],
+      "profile": "フリー・インプロヴィゼーションの現場で独自の音響世界を築くサックス奏者。自作のノイズ楽器も用い、音の断片、持続、摩擦を素材に、ジャズの語法を超えた緊張感のある演奏を展開する。",
+      "albums": [
+        "The Elements - Tenor Saxophone Solos",
+        "SSI Solo 2024",
+        "Be Quiet!!! (with Kazuo Imai, 2023)"
+      ],
+      "youtube_search": "Junji Hirose saxophone free improvisation",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Junji%20Hirose%20saxophone%20free%20improvisation"
+    },
+    {
+      "id": "yasuhiro-yoshigaki",
+      "name": "芳垣安洋",
+      "name_en": "Yasuhiro Yoshigaki",
+      "instrument": [
+        "ドラム",
+        "パーカッション"
+      ],
+      "profile": "ジャズ、即興、ロック、民族音楽を横断するドラマー。ROVO、大友良英のプロジェクト、Orquesta Libreなどで、緻密なアンサンブルと爆発的なグルーヴを両立させる。大編成の音楽を自在に動かす現代日本の重要なリズム奏者。",
+      "albums": [
+        "ONJQ+ (大友良英 New Jazz Quintet関連)",
+        "LIVE at Shinjuku Pit Inn (Orquesta Libre関連)",
+        "ROVOの作品群"
+      ],
+      "youtube_search": "Yasuhiro Yoshigaki drums ROVO live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Yasuhiro%20Yoshigaki%20drums%20ROVO%20live"
     }
   ]
 }

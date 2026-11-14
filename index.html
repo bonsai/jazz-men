@@ -84,14 +84,20 @@ input[type=search]:focus{border-color:var(--cyan)}.count{color:var(--muted);font
   };
   videoItems.forEach((v,i)=>{
    const card=grid.querySelector('[data-video-card="'+i+'"]'),img=card.querySelector('[data-video-thumb="'+i+'"]');
-   let fallback=false;
-   img.addEventListener('error',()=>{
-    if(!fallback){fallback=true;img.src='https://i.ytimg.com/vi/'+encodeURIComponent(getVideoId(v.video_url))+'/mqdefault.jpg';return;}
-    card.remove();moveToSurvey(v);checked++;updateCount();
-   });
+   const videoId=getVideoId(v.video_url);
+   const candidates=['hqdefault.jpg','mqdefault.jpg','0.jpg','default.jpg'];
+   let candidateIndex=0, settled=false;
+   const failOrFallback=()=>{
+    if(settled)return;
+    candidateIndex++;
+    if(candidateIndex<candidates.length){img.src='https://i.ytimg.com/vi/'+encodeURIComponent(videoId)+'/'+candidates[candidateIndex];return;}
+    settled=true;card.remove();moveToSurvey(v);checked++;updateCount();
+   };
+   img.addEventListener('error',failOrFallback);
    img.addEventListener('load',()=>{
-    if(img.naturalWidth>120){card.hidden=false;visible++;checked++;updateCount();}
-    else{card.remove();moveToSurvey(v);checked++;updateCount();}
+    if(settled)return;
+    if(img.naturalWidth>120){settled=true;card.hidden=false;visible++;checked++;updateCount();}
+    else failOrFallback();
    });
   });
   updateCount();
@@ -110,7 +116,7 @@ input[type=search]:focus{border-color:var(--cyan)}.count{color:var(--muted);font
  };
  active(route().page);
  const loadJson=path=>fetch(path,{signal:AbortSignal.timeout(12000)}).then(r=>{if(!r.ok)throw Error(path+' ('+r.status+')');return r.json()});
- Promise.allSettled([loadJson('data/artists.json'),loadJson('japan/artists.json'),loadJson('data/playlists.json'),loadJson('data/videos.json')]).then(results=>{
+ const loadVideoJsonl=()=>fetch('data/videos.jsonl',{signal:AbortSignal.timeout(12000)}).then(r=>{if(!r.ok)throw Error('data/videos.jsonl ('+r.status+')');return r.text();}).then(t=>({videos:t.split(/\\r?\\n/).filter(Boolean).map(line=>JSON.parse(line))}));\n Promise.allSettled([loadJson('data/artists.json'),loadJson('japan/artists.json'),loadJson('data/playlists.json'),loadVideoJsonl()]).then(results=>{
   const errors=[];
   if(results[0].status==='fulfilled')state.world=results[0].value.artists||[];else errors.push(results[0].reason.message);
   if(results[1].status==='fulfilled')state.japan=results[1].value.artists||[];else errors.push(results[1].reason.message);

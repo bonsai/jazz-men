@@ -79,3 +79,11 @@ Python標準ライブラリのみを使用する。JSON/JSONL構文、必須形�
 - 活動期間は生没年から自動推定しない。
 - 作品の発売年と録音年は別フィールド。
 - 影響関係と編集上の関連づけを区別する。
+
+## Machine-readable JSON Schema
+
+- `schema/atlas.schema.json`: JSON Schema Draft 2020-12。全エンティティのフィールド、型、列挙値、基本制約を定義。
+- `schema/atlas.example.json`: 統合データセットの最小サンプル。
+
+JSON Schemaは構造・型の検証を担当し、既存カタログとのID参照整合性やJSONLの行単位検査は `python scripts/validate_atlas.py` が担当する。つまり、スキーマ検証と参照整合性検証を分離する。
+

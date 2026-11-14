@@ -1,4 +1,53 @@
 {
   "schema_version": "1.0.0",
-  "works": []
+  "works": [
+    {
+      "id": "ornette-coleman-shape-of-jazz-to-come",
+      "title": "The Shape of Jazz to Come",
+      "artist_ids": [
+        "ornette-coleman"
+      ],
+      "release_year": 1959,
+      "recording_year": null,
+      "place_ids": [],
+      "concept_ids": [],
+      "source_urls": []
+    },
+    {
+      "id": "cecil-taylor-unit-structures",
+      "title": "Unit Structures",
+      "artist_ids": [
+        "cecil-taylor"
+      ],
+      "release_year": 1966,
+      "recording_year": null,
+      "place_ids": [],
+      "concept_ids": [],
+      "source_urls": []
+    },
+    {
+      "id": "john-coltrane-a-love-supreme",
+      "title": "A Love Supreme",
+      "artist_ids": [
+        "john-coltrane"
+      ],
+      "release_year": 1965,
+      "recording_year": null,
+      "place_ids": [],
+      "concept_ids": [],
+      "source_urls": []
+    },
+    {
+      "id": "masayuki-takayanagi-independence-tread-on-sure-ground",
+      "title": "Independence: Tread on Sure Ground",
+      "artist_ids": [
+        "masayuki-takayanagi"
+      ],
+      "release_year": 1970,
+      "recording_year": null,
+      "place_ids": [],
+      "concept_ids": [],
+      "source_urls": []
+    }
+  ]
 }

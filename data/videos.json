@@ -2,24 +2,6 @@
   "schema_version": "1.0.0",
   "videos": [
     {
-      "id": "ornette-coleman",
-      "artist": "Ornette Coleman",
-      "work": "Free Jazz (1961)",
-      "youtube_search_url": "https://www.youtube.com/results?search_query=Ornette%20Coleman%20Free%20Jazz%20(1961)",
-      "video_url": "https://www.youtube.com/watch?v=iPDzlSda8P8",
-      "verification": "video_found",
-      "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
-    },
-    {
-      "id": "cecil-taylor",
-      "artist": "Cecil Taylor",
-      "work": "Unit Structures",
-      "youtube_search_url": "https://www.youtube.com/results?search_query=Cecil%20Taylor%20Unit%20Structures",
-      "video_url": null,
-      "verification": "search_required",
-      "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
-    },
-    {
       "id": "albert-ayler",
       "artist": "Albert Ayler",
       "work": "Spiritual Unity",
@@ -29,103 +11,31 @@
       "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
     },
     {
-      "id": "john-coltrane",
-      "artist": "John Coltrane",
-      "work": "Ascension",
-      "youtube_search_url": "https://www.youtube.com/results?search_query=John%20Coltrane%20Ascension",
+      "id": "albert-ayler-ghosts",
+      "artist": "Albert Ayler",
+      "work": "Ghosts",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Albert%20Ayler%20Ghosts",
       "video_url": null,
       "verification": "search_required",
-      "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
     },
     {
-      "id": "sun-ra",
-      "artist": "Sun Ra",
-      "work": "Space Is the Place",
-      "youtube_search_url": "https://www.youtube.com/results?search_query=Sun%20Ra%20Space%20Is%20the%20Place",
+      "id": "albert-ayler-spirits",
+      "artist": "Albert Ayler",
+      "work": "Spirits — Spiritual Unity",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Albert%20Ayler%20Spirits%20%E2%80%94%20Spiritual%20Unity",
       "video_url": null,
       "verification": "search_required",
-      "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
     },
     {
-      "id": "archie-shepp",
-      "artist": "Archie Shepp",
-      "work": "Fire Music",
-      "youtube_search_url": "https://www.youtube.com/results?search_query=Archie%20Shepp%20Fire%20Music",
+      "id": "albert-ayler-holy-ghost",
+      "artist": "Albert Ayler",
+      "work": "Holy Ghost — live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Albert%20Ayler%20Holy%20Ghost%20%E2%80%94%20live",
       "video_url": null,
       "verification": "search_required",
-      "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
-    },
-    {
-      "id": "pharoah-sanders",
-      "artist": "Pharoah Sanders",
-      "work": "The Creator Has a Master Plan",
-      "youtube_search_url": "https://www.youtube.com/results?search_query=Pharoah%20Sanders%20The%20Creator%20Has%20a%20Master%20Plan",
-      "video_url": null,
-      "verification": "search_required",
-      "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
-    },
-    {
-      "id": "peter-brotzmann",
-      "artist": "Peter Brötzmann",
-      "work": "Machine Gun",
-      "youtube_search_url": "https://www.youtube.com/results?search_query=Peter%20Br%C3%B6tzmann%20Machine%20Gun",
-      "video_url": null,
-      "verification": "search_required",
-      "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
-    },
-    {
-      "id": "evan-parker",
-      "artist": "Evan Parker",
-      "work": "Solo saxophone",
-      "youtube_search_url": "https://www.youtube.com/results?search_query=Evan%20Parker%20Solo%20saxophone",
-      "video_url": null,
-      "verification": "search_required",
-      "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
-    },
-    {
-      "id": "anthony-braxton",
-      "artist": "Anthony Braxton",
-      "work": "For Alto",
-      "youtube_search_url": "https://www.youtube.com/results?search_query=Anthony%20Braxton%20For%20Alto",
-      "video_url": null,
-      "verification": "search_required",
-      "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
-    },
-    {
-      "id": "derek-bailey",
-      "artist": "Derek Bailey",
-      "work": "Solo Guitar",
-      "youtube_search_url": "https://www.youtube.com/results?search_query=Derek%20Bailey%20Solo%20Guitar",
-      "video_url": null,
-      "verification": "search_required",
-      "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
-    },
-    {
-      "id": "art-ensemble-of-chicago",
-      "artist": "Art Ensemble of Chicago",
-      "work": "Theme de Yoyo",
-      "youtube_search_url": "https://www.youtube.com/results?search_query=Art%20Ensemble%20of%20Chicago%20Theme%20de%20Yoyo",
-      "video_url": null,
-      "verification": "search_required",
-      "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
-    },
-    {
-      "id": "don-cherry",
-      "artist": "Don Cherry",
-      "work": "Brown Rice",
-      "youtube_search_url": "https://www.youtube.com/results?search_query=Don%20Cherry%20Brown%20Rice",
-      "video_url": null,
-      "verification": "search_required",
-      "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
-    },
-    {
-      "id": "milford-graves",
-      "artist": "Milford Graves",
-      "work": "Bäbi",
-      "youtube_search_url": "https://www.youtube.com/results?search_query=Milford%20Graves%20B%C3%A4bi",
-      "video_url": null,
-      "verification": "search_required",
-      "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
     },
     {
       "id": "alice-coltrane",
@@ -137,130 +47,508 @@
       "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
     },
     {
-      "id": "takayanagi-masayuki",
-      "artist": "高柳昌行",
-      "work": "Mass Projection",
-      "youtube_search_url": "https://www.youtube.com/results?search_query=%E9%AB%98%E6%9F%B3%E6%98%8C%E8%A1%8C%20Mass%20Projection",
+      "id": "alice-coltrane-journey",
+      "artist": "Alice Coltrane",
+      "work": "Journey in Satchidananda",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Alice%20Coltrane%20Journey%20in%20Satchidananda",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "anthony-braxton",
+      "artist": "Anthony Braxton",
+      "work": "For Alto",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Anthony%20Braxton%20For%20Alto",
       "video_url": null,
       "verification": "search_required",
       "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
     },
     {
-      "id": "abe-kaoru",
-      "artist": "阿部薫",
-      "work": "彗星パルティータ",
-      "youtube_search_url": "https://www.youtube.com/results?search_query=%E9%98%BF%E9%83%A8%E8%96%AB%20%E5%BD%97%E6%98%9F%E3%83%91%E3%83%AB%E3%83%86%E3%82%A3%E3%83%BC%E3%82%BF",
+      "id": "anthony-braxton-for-alto",
+      "artist": "Anthony Braxton",
+      "work": "For Alto",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Anthony%20Braxton%20For%20Alto",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "archie-shepp",
+      "artist": "Archie Shepp",
+      "work": "Fire Music",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Archie%20Shepp%20Fire%20Music",
       "video_url": null,
       "verification": "search_required",
       "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
     },
     {
-      "id": "yamashita-yosuke",
-      "artist": "山下洋輔",
-      "work": "木喰",
-      "youtube_search_url": "https://www.youtube.com/results?search_query=%E5%B1%B1%E4%B8%8B%E6%B4%8B%E8%BC%94%20%E6%9C%A8%E5%96%B0",
+      "id": "archie-shepp-fire-music",
+      "artist": "Archie Shepp",
+      "work": "Fire Music",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Archie%20Shepp%20Fire%20Music",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "archie-shepp-montreux",
+      "artist": "Archie Shepp",
+      "work": "Live at Montreux",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Archie%20Shepp%20Live%20at%20Montreux",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "art-ensemble-of-chicago",
+      "artist": "Art Ensemble of Chicago",
+      "work": "Theme de Yoyo",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Art%20Ensemble%20of%20Chicago%20Theme%20de%20Yoyo",
       "video_url": null,
       "verification": "search_required",
       "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
     },
     {
-      "id": "togashi-masahiko",
-      "artist": "富樫雅彦",
-      "work": "Spiritual Nature",
-      "youtube_search_url": "https://www.youtube.com/results?search_query=%E5%AF%8C%E6%A8%AB%E9%9B%85%E5%BD%A6%20Spiritual%20Nature",
+      "id": "art-ensemble-yoyo",
+      "artist": "Art Ensemble of Chicago",
+      "work": "Thème de Yoyo",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Art%20Ensemble%20of%20Chicago%20Th%C3%A8me%20de%20Yoyo",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "art-ensemble-live-1983",
+      "artist": "Art Ensemble of Chicago",
+      "work": "Live 1983",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Art%20Ensemble%20of%20Chicago%20Live%201983",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "barre-phillips",
+      "artist": "Barre Phillips",
+      "work": "Solo contrabass",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Barre%20Phillips%20Solo%20contrabass",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "cecil-taylor",
+      "artist": "Cecil Taylor",
+      "work": "Unit Structures",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Cecil%20Taylor%20Unit%20Structures",
       "video_url": null,
       "verification": "search_required",
       "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
     },
     {
-      "id": "sakata-akira",
-      "artist": "坂田明",
-      "work": "20人格",
-      "youtube_search_url": "https://www.youtube.com/results?search_query=%E5%9D%82%E7%94%B0%E6%98%8E%2020%E4%BA%BA%E6%A0%BC",
+      "id": "cecil-taylor-of-what",
+      "artist": "Cecil Taylor",
+      "work": "Of What (1958)",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Cecil%20Taylor%20Of%20What%20(1958)",
+      "video_url": "https://www.youtube.com/watch?v=74_fINFqFdY",
+      "verification": "video_found",
+      "note": "Conservatoire de Cergy-Pontoiseの選曲ページ掲載"
+    },
+    {
+      "id": "cecil-taylor-conquistador",
+      "artist": "Cecil Taylor",
+      "work": "Conquistador (1966)",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Cecil%20Taylor%20Conquistador%20(1966)",
+      "video_url": "https://www.youtube.com/watch?v=-lq7liyDznk",
+      "verification": "video_found",
+      "note": "Conservatoire de Cergy-Pontoiseの選曲ページ掲載"
+    },
+    {
+      "id": "cecil-taylor-unit-structures",
+      "artist": "Cecil Taylor",
+      "work": "Unit Structures",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Cecil%20Taylor%20Unit%20Structures",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "derek-bailey",
+      "artist": "Derek Bailey",
+      "work": "Solo Guitar",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Derek%20Bailey%20Solo%20Guitar",
       "video_url": null,
       "verification": "search_required",
       "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
     },
     {
-      "id": "oki-itaru",
-      "artist": "沖至",
-      "work": "free jazz improvisation",
-      "youtube_search_url": "https://www.youtube.com/results?search_query=%E6%B2%96%E8%87%B3%20free%20jazz%20improvisation",
+      "id": "derek-bailey-guitar",
+      "artist": "Derek Bailey",
+      "work": "Solo Guitar",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Derek%20Bailey%20Solo%20Guitar",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "don-cherry",
+      "artist": "Don Cherry",
+      "work": "Brown Rice",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Don%20Cherry%20Brown%20Rice",
       "video_url": null,
       "verification": "search_required",
       "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
     },
     {
-      "id": "kondo-toshinori",
-      "artist": "近藤等則",
-      "work": "Tokyo Rose",
-      "youtube_search_url": "https://www.youtube.com/results?search_query=%E8%BF%91%E8%97%A4%E7%AD%89%E5%89%87%20Tokyo%20Rose",
+      "id": "don-cherry-brown-rice",
+      "artist": "Don Cherry",
+      "work": "Brown Rice",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Don%20Cherry%20Brown%20Rice",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "eric-dolphy-hat-beard",
+      "artist": "Eric Dolphy",
+      "work": "Hat and Beard",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Eric%20Dolphy%20Hat%20and%20Beard",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "eric-dolphy-out-to-lunch",
+      "artist": "Eric Dolphy",
+      "work": "Out to Lunch!",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Eric%20Dolphy%20Out%20to%20Lunch!",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "evan-parker",
+      "artist": "Evan Parker",
+      "work": "Solo saxophone",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Evan%20Parker%20Solo%20saxophone",
       "video_url": null,
       "verification": "search_required",
       "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
     },
     {
-      "id": "otomo-yoshihide",
-      "artist": "大友良英",
-      "work": "improvised music live",
-      "youtube_search_url": "https://www.youtube.com/results?search_query=%E5%A4%A7%E5%8F%8B%E8%89%AF%E8%8B%B1%20improvised%20music%20live",
+      "id": "evan-parker-solo",
+      "artist": "Evan Parker",
+      "work": "Solo saxophone",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Evan%20Parker%20Solo%20saxophone",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "fred-van-hove",
+      "artist": "Fred Van Hove",
+      "work": "Solo piano",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Fred%20Van%20Hove%20Solo%20piano",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "han-bennink",
+      "artist": "Han Bennink",
+      "work": "Solo percussion performance",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Han%20Bennink%20Solo%20percussion%20performance",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "john-coltrane",
+      "artist": "John Coltrane",
+      "work": "Ascension",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=John%20Coltrane%20Ascension",
       "video_url": null,
       "verification": "search_required",
       "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
     },
     {
-      "id": "haino-keiji",
-      "artist": "灰野敬二",
-      "work": "live improvisation",
-      "youtube_search_url": "https://www.youtube.com/results?search_query=%E7%81%B0%E9%87%8E%E6%95%AC%E4%BA%8C%20live%20improvisation",
+      "id": "john-coltrane-ascension",
+      "artist": "John Coltrane",
+      "work": "Ascension",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=John%20Coltrane%20Ascension",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "john-coltrane-interstellar-space",
+      "artist": "John Coltrane",
+      "work": "Interstellar Space",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=John%20Coltrane%20Interstellar%20Space",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "julius-hemphill-dogon",
+      "artist": "Julius Hemphill",
+      "work": "Dogon A.D.",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Julius%20Hemphill%20Dogon%20A.D.",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "linda-sharrock",
+      "artist": "Linda Sharrock",
+      "work": "Who Does She Hope To Be?",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Linda%20Sharrock%20Who%20Does%20She%20Hope%20To%20Be%3F",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "mary-halvorson",
+      "artist": "Mary Halvorson",
+      "work": "Live improvisation",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Mary%20Halvorson%20Live%20improvisation",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "mats-gustafsson",
+      "artist": "Mats Gustafsson",
+      "work": "Solo saxophone",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Mats%20Gustafsson%20Solo%20saxophone",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "milford-graves",
+      "artist": "Milford Graves",
+      "work": "Bäbi",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Milford%20Graves%20B%C3%A4bi",
       "video_url": null,
       "verification": "search_required",
       "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
     },
     {
-      "id": "shimizu-yasuaki",
-      "artist": "清水靖晃",
-      "work": "saxophone improvisation",
-      "youtube_search_url": "https://www.youtube.com/results?search_query=%E6%B8%85%E6%B0%B4%E9%9D%96%E6%99%83%20saxophone%20improvisation",
+      "id": "milford-graves-babi",
+      "artist": "Milford Graves",
+      "work": "Bäbi",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Milford%20Graves%20B%C3%A4bi",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "misha-mengelberg",
+      "artist": "Misha Mengelberg",
+      "work": "Instant Composers Pool live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Misha%20Mengelberg%20Instant%20Composers%20Pool%20live",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "ornette-coleman",
+      "artist": "Ornette Coleman",
+      "work": "Free Jazz (1961)",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Ornette%20Coleman%20Free%20Jazz%20(1961)",
+      "video_url": "https://www.youtube.com/watch?v=iPDzlSda8P8",
+      "verification": "video_found",
+      "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
+    },
+    {
+      "id": "ornette-change-of-century",
+      "artist": "Ornette Coleman",
+      "work": "Change of the Century (1959)",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Ornette%20Coleman%20Change%20of%20the%20Century%20(1959)",
+      "video_url": "https://www.youtube.com/watch?v=fpva1_of3L0",
+      "verification": "video_found",
+      "note": "Conservatoire de Cergy-Pontoiseの選曲ページ掲載"
+    },
+    {
+      "id": "ornette-lonely-woman",
+      "artist": "Ornette Coleman",
+      "work": "Lonely Woman",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Ornette%20Coleman%20Lonely%20Woman",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "ornette-folk-tale",
+      "artist": "Ornette Coleman",
+      "work": "Folk Tale",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Ornette%20Coleman%20Folk%20Tale",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "ornette-berlin-1971",
+      "artist": "Ornette Coleman Quartet",
+      "work": "Berlin Jazz Festival 1971",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Ornette%20Coleman%20Quartet%20Berlin%20Jazz%20Festival%201971",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "patty-waters-black-color",
+      "artist": "Patty Waters",
+      "work": "Black Is the Color of My True Love's Hair",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Patty%20Waters%20Black%20Is%20the%20Color%20of%20My%20True%20Love's%20Hair",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "peter-brotzmann",
+      "artist": "Peter Brötzmann",
+      "work": "Machine Gun",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Peter%20Br%C3%B6tzmann%20Machine%20Gun",
       "video_url": null,
       "verification": "search_required",
       "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
     },
     {
-      "id": "matsumaru-kei",
-      "artist": "松丸契",
-      "work": "live saxophone",
-      "youtube_search_url": "https://www.youtube.com/results?search_query=%E6%9D%BE%E4%B8%B8%E5%A5%91%20live%20saxophone",
+      "id": "peter-brotzmann-nipples",
+      "artist": "Peter Brötzmann",
+      "work": "Nipples",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Peter%20Br%C3%B6tzmann%20Nipples",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "peter-brotzmann-machine-gun",
+      "artist": "Peter Brötzmann Octet",
+      "work": "Machine Gun",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Peter%20Br%C3%B6tzmann%20Octet%20Machine%20Gun",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "peter-evans",
+      "artist": "Peter Evans",
+      "work": "Trumpet solo / improvisation",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Peter%20Evans%20Trumpet%20solo%20%2F%20improvisation",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "pharoah-sanders",
+      "artist": "Pharoah Sanders",
+      "work": "The Creator Has a Master Plan",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Pharoah%20Sanders%20The%20Creator%20Has%20a%20Master%20Plan",
       "video_url": null,
       "verification": "search_required",
       "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
     },
     {
-      "id": "honda-toshiyuki",
-      "artist": "本多俊之",
-      "work": "saxophone improvisation",
-      "youtube_search_url": "https://www.youtube.com/results?search_query=%E6%9C%AC%E5%A4%9A%E4%BF%8A%E4%B9%8B%20saxophone%20improvisation",
+      "id": "pharoah-sanders-creator",
+      "artist": "Pharoah Sanders",
+      "work": "The Creator Has a Master Plan",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Pharoah%20Sanders%20The%20Creator%20Has%20a%20Master%20Plan",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "pharoah-sanders-live",
+      "artist": "Pharoah Sanders",
+      "work": "Live at the East",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Pharoah%20Sanders%20Live%20at%20the%20East",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "pierre-favre",
+      "artist": "Pierre Favre",
+      "work": "Free improvisation live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Pierre%20Favre%20Free%20improvisation%20live",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "rahsaan-roland-kirk-nose-flute",
+      "artist": "Rahsaan Roland Kirk",
+      "work": "1972 Montreux Jazz Festival — mouth flute + nose flute performance",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Rahsaan+Roland+Kirk+Montreux+1972+nose+flute",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "口でフルート、鼻でソプラノ・リコーダー（nose flute）を同時に演奏する映像候補。動画URLは未確認。"
+    },
+    {
+      "id": "roland-kirk-nose-flute-montreux",
+      "artist": "Rahsaan Roland Kirk",
+      "work": "Flute with nose — Live at Montreux (1972)",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Rahsaan%20Roland%20Kirk%20Flute%20with%20nose%20%E2%80%94%20Live%20at%20Montreux%20(1972)",
+      "video_url": "https://www.youtube.com/watch?v=5WZIm2Yvmtc",
+      "verification": "video_found",
+      "note": "YouTube動画タイトルと映像説明を確認。口のフルートと鼻のリコーダーを同時演奏"
+    },
+    {
+      "id": "john-stevens-spontaneous",
+      "artist": "Spontaneous Music Ensemble",
+      "work": "Karyobin",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Spontaneous%20Music%20Ensemble%20Karyobin",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "sun-ra",
+      "artist": "Sun Ra",
+      "work": "Space Is the Place",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Sun%20Ra%20Space%20Is%20the%20Place",
       "video_url": null,
       "verification": "search_required",
       "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
     },
     {
-      "id": "umezu-kazutoki",
-      "artist": "梅津和時",
-      "work": "free jazz live",
-      "youtube_search_url": "https://www.youtube.com/results?search_query=%E6%A2%85%E6%B4%A5%E5%92%8C%E6%99%82%20free%20jazz%20live",
+      "id": "sun-ra-space-is-the-place",
+      "artist": "Sun Ra",
+      "work": "Space Is the Place",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Sun%20Ra%20Space%20Is%20the%20Place",
       "video_url": null,
       "verification": "search_required",
-      "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
     },
     {
-      "id": "fujii-satoko",
-      "artist": "藤井郷子",
-      "work": "live improvisation",
-      "youtube_search_url": "https://www.youtube.com/results?search_query=%E8%97%A4%E4%BA%95%E9%83%B7%E5%AD%90%20live%20improvisation",
+      "id": "sun-ra-heliocentric",
+      "artist": "Sun Ra",
+      "work": "The Heliocentric Worlds",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Sun%20Ra%20The%20Heliocentric%20Worlds",
       "video_url": null,
       "verification": "search_required",
-      "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "sun-ra-outer-spaceways",
+      "artist": "Sun Ra Arkestra",
+      "work": "Outer Spaceways Incorporated",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Sun%20Ra%20Arkestra%20Outer%20Spaceways%20Incorporated",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "sunny-murray-red-cross",
+      "artist": "Sunny Murray",
+      "work": "Red Cross",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Sunny%20Murray%20Red%20Cross",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
     },
     {
       "id": "kani-sasara-ayako",
@@ -272,13 +560,283 @@
       "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
     },
     {
-      "id": "rahsaan-roland-kirk-nose-flute",
-      "artist": "Rahsaan Roland Kirk",
-      "work": "1972 Montreux Jazz Festival — mouth flute + nose flute performance",
-      "youtube_search_url": "https://www.youtube.com/results?search_query=Rahsaan+Roland+Kirk+Montreux+1972+nose+flute",
+      "id": "ayako-kani-sho",
+      "artist": "カニササレアヤコ",
+      "work": "笙 即興演奏",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=%E3%82%AB%E3%83%8B%E3%82%B5%E3%82%B5%E3%83%AC%E3%82%A2%E3%83%A4%E3%82%B3%20%E7%AC%99%20%E5%8D%B3%E8%88%88%E6%BC%94%E5%A5%8F",
       "video_url": null,
       "verification": "search_required",
-      "note": "口でフルート、鼻でソプラノ・リコーダー（nose flute）を同時に演奏する映像候補。動画URLは未確認。"
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "abe-kaoru",
+      "artist": "阿部薫",
+      "work": "彗星パルティータ",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=%E9%98%BF%E9%83%A8%E8%96%AB%20%E5%BD%97%E6%98%9F%E3%83%91%E3%83%AB%E3%83%86%E3%82%A3%E3%83%BC%E3%82%BF",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
+    },
+    {
+      "id": "kaoru-abe-suisei",
+      "artist": "阿部薫",
+      "work": "彗星パルティータ",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=%E9%98%BF%E9%83%A8%E8%96%AB%20%E5%BD%97%E6%98%9F%E3%83%91%E3%83%AB%E3%83%86%E3%82%A3%E3%83%BC%E3%82%BF",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "oki-itaru",
+      "artist": "沖至",
+      "work": "free jazz improvisation",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=%E6%B2%96%E8%87%B3%20free%20jazz%20improvisation",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
+    },
+    {
+      "id": "itaru-oki-live",
+      "artist": "沖至",
+      "work": "Free jazz live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=%E6%B2%96%E8%87%B3%20Free%20jazz%20live",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "haino-keiji",
+      "artist": "灰野敬二",
+      "work": "live improvisation",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=%E7%81%B0%E9%87%8E%E6%95%AC%E4%BA%8C%20live%20improvisation",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
+    },
+    {
+      "id": "keiji-haino-live",
+      "artist": "灰野敬二",
+      "work": "Live improvisation",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=%E7%81%B0%E9%87%8E%E6%95%AC%E4%BA%8C%20Live%20improvisation",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "kondo-toshinori",
+      "artist": "近藤等則",
+      "work": "Tokyo Rose",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=%E8%BF%91%E8%97%A4%E7%AD%89%E5%89%87%20Tokyo%20Rose",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
+    },
+    {
+      "id": "toshinori-kondo-tokyo-rose",
+      "artist": "近藤等則",
+      "work": "Tokyo Rose",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=%E8%BF%91%E8%97%A4%E7%AD%89%E5%89%87%20Tokyo%20Rose",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "takayanagi-masayuki",
+      "artist": "高柳昌行",
+      "work": "Mass Projection",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=%E9%AB%98%E6%9F%B3%E6%98%8C%E8%A1%8C%20Mass%20Projection",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
+    },
+    {
+      "id": "masayuki-takayanagi-mass-projection",
+      "artist": "高柳昌行",
+      "work": "Mass Projection",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=%E9%AB%98%E6%9F%B3%E6%98%8C%E8%A1%8C%20Mass%20Projection",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "masayuki-takayanagi-abe-kaoru",
+      "artist": "高柳昌行・阿部薫",
+      "work": "漸次投射",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=%E9%AB%98%E6%9F%B3%E6%98%8C%E8%A1%8C%E3%83%BB%E9%98%BF%E9%83%A8%E8%96%AB%20%E6%BC%B8%E6%AC%A1%E6%8A%95%E5%B0%84",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "sakata-akira",
+      "artist": "坂田明",
+      "work": "20人格",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=%E5%9D%82%E7%94%B0%E6%98%8E%2020%E4%BA%BA%E6%A0%BC",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
+    },
+    {
+      "id": "akira-sakata-20",
+      "artist": "坂田明",
+      "work": "20人格",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=%E5%9D%82%E7%94%B0%E6%98%8E%2020%E4%BA%BA%E6%A0%BC",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "yamashita-yosuke",
+      "artist": "山下洋輔",
+      "work": "木喰",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=%E5%B1%B1%E4%B8%8B%E6%B4%8B%E8%BC%94%20%E6%9C%A8%E5%96%B0",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
+    },
+    {
+      "id": "yousuke-yamashita-mokujiki",
+      "artist": "山下洋輔",
+      "work": "木喰",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=%E5%B1%B1%E4%B8%8B%E6%B4%8B%E8%BC%94%20%E6%9C%A8%E5%96%B0",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "tetuzi-akitagawa",
+      "artist": "秋田昌美",
+      "work": "Noise / experimental performance",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=%E7%A7%8B%E7%94%B0%E6%98%8C%E7%BE%8E%20Noise%20%2F%20experimental%20performance",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "matsumaru-kei",
+      "artist": "松丸契",
+      "work": "live saxophone",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=%E6%9D%BE%E4%B8%B8%E5%A5%91%20live%20saxophone",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
+    },
+    {
+      "id": "kei-matsumaru-live",
+      "artist": "松丸契",
+      "work": "Live saxophone",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=%E6%9D%BE%E4%B8%B8%E5%A5%91%20Live%20saxophone",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "shimizu-yasuaki",
+      "artist": "清水靖晃",
+      "work": "saxophone improvisation",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=%E6%B8%85%E6%B0%B4%E9%9D%96%E6%99%83%20saxophone%20improvisation",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
+    },
+    {
+      "id": "yasuaki-shimizu-sax",
+      "artist": "清水靖晃",
+      "work": "Saxophone improvisation",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=%E6%B8%85%E6%B0%B4%E9%9D%96%E6%99%83%20Saxophone%20improvisation",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "otomo-yoshihide",
+      "artist": "大友良英",
+      "work": "improvised music live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=%E5%A4%A7%E5%8F%8B%E8%89%AF%E8%8B%B1%20improvised%20music%20live",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
+    },
+    {
+      "id": "yoshihide-otomo-live",
+      "artist": "大友良英",
+      "work": "Improvised music live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=%E5%A4%A7%E5%8F%8B%E8%89%AF%E8%8B%B1%20Improvised%20music%20live",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "toshimaru-nakamura",
+      "artist": "中村としまる",
+      "work": "No-input mixing board performance",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=%E4%B8%AD%E6%9D%91%E3%81%A8%E3%81%97%E3%81%BE%E3%82%8B%20No-input%20mixing%20board%20performance",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "fujii-satoko",
+      "artist": "藤井郷子",
+      "work": "live improvisation",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=%E8%97%A4%E4%BA%95%E9%83%B7%E5%AD%90%20live%20improvisation",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
+    },
+    {
+      "id": "satoko-fujii-live",
+      "artist": "藤井郷子",
+      "work": "Live improvisation",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=%E8%97%A4%E4%BA%95%E9%83%B7%E5%AD%90%20Live%20improvisation",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "umezu-kazutoki",
+      "artist": "梅津和時",
+      "work": "free jazz live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=%E6%A2%85%E6%B4%A5%E5%92%8C%E6%99%82%20free%20jazz%20live",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
+    },
+    {
+      "id": "kazutoki-umezu-live",
+      "artist": "梅津和時",
+      "work": "Free jazz live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=%E6%A2%85%E6%B4%A5%E5%92%8C%E6%99%82%20Free%20jazz%20live",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "togashi-masahiko",
+      "artist": "富樫雅彦",
+      "work": "Spiritual Nature",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=%E5%AF%8C%E6%A8%AB%E9%9B%85%E5%BD%A6%20Spiritual%20Nature",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
+    },
+    {
+      "id": "masahiko-togashi-spiritual",
+      "artist": "富樫雅彦",
+      "work": "Spiritual Nature",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=%E5%AF%8C%E6%A8%AB%E9%9B%85%E5%BD%A6%20Spiritual%20Nature",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "検索候補。演奏内容・正式タイトルを確認してから個別動画URLを登録。"
+    },
+    {
+      "id": "honda-toshiyuki",
+      "artist": "本多俊之",
+      "work": "saxophone improvisation",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=%E6%9C%AC%E5%A4%9A%E4%BF%8A%E4%B9%8B%20saxophone%20improvisation",
+      "video_url": null,
+      "verification": "search_required",
+      "note": "候補。動画の内容・権利・正式タイトルを確認してからプレイリストへ追加"
     }
   ]
 }

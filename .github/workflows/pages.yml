@@ -1,0 +1,66 @@
+name: Deploy Jazz-Men SPA to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "index.html"
+      - "data/**"
+      - "japan/**"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate JSON data
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          files = [
+              Path("data/artists.json"),
+              Path("japan/artists.json"),
+              Path("data/playlists.json"),
+          ]
+          for path in files:
+              with path.open(encoding="utf-8") as f:
+                  json.load(f)
+              print(f"OK: {path}")
+
+          for path in files[:2]:
+              data = json.loads(path.read_text(encoding="utf-8"))
+              artists = data.get("artists", [])
+              ids = [artist["id"] for artist in artists]
+              assert len(ids) == len(set(ids)), f"Duplicate artist IDs in {path}"
+              print(f"{path}: {len(artists)} artists")
+          PY
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

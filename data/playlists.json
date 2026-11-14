@@ -124,6 +124,70 @@
         "experimental"
       ],
       "note": "Spotifyの公開プレイリスト。即興演奏の多様なアプローチを俯瞰できます。"
+    },
+    {
+      "id": "ambient-jazz-quiet-forceful",
+      "title": "AMBIENT JAZZ / QUIET FORCE",
+      "subtitle": "静けさのなかの強い流れ。空間そのものが楽器になる。",
+      "description": "Pharoah Sanders、Floating Points、Nala Sinephroらが開いた、コンテンポラリなアンビエント・ジャズの入口。テンポよりテクスチャ、ビートより呼吸。Pitchfork編の公開プレイリスト。",
+      "platform": "Spotify",
+      "playlist_title": "Ambient Jazz’s Quiet, Forceful Return",
+      "curator": "Pitchfork",
+      "spotify_url": "https://open.spotify.com/playlist/0cSHsgFHI7EbiFxZTOiE3T",
+      "embed_url": "https://open.spotify.com/embed/playlist/0cSHsgFHI7EbiFxZTOiE3T?utm_source=generator",
+      "tracks_to_listen_for": [
+        {
+          "title": "Promises",
+          "artist": "Floating Points, Pharoah Sanders & The London Symphony Orchestra"
+        },
+        {
+          "title": "Space 1",
+          "artist": "Nala Sinephro"
+        },
+        {
+          "title": "Astral Traveling",
+          "artist": "Pharoah Sanders"
+        }
+      ],
+      "tags": [
+        "ambient jazz",
+        "spiritual jazz",
+        "contemporary",
+        "deep listening"
+      ],
+      "note": "既存のSpotify公開プレイリストを紹介・埋め込み表示するものです。ユーザーアカウントへの新規プレイリスト作成ではありません。"
+    },
+    {
+      "id": "ecm-ambient-jazz",
+      "title": "ECM AMBIENT JAZZ",
+      "subtitle": "北欧の余白、ECMの空気。長い残響の叙事詩。",
+      "description": "ECM Recordsを軸にしたアンビエント／リリカル・ジャズの公開プレイリスト。メロディが風景になるような、没入型の長尺セレクション。",
+      "platform": "Spotify",
+      "playlist_title": "ECM Records Ambient Jazz",
+      "curator": "Arya Boustani",
+      "spotify_url": "https://open.spotify.com/playlist/3ZnUknHIAXK3E4D7kPP4aC",
+      "embed_url": "https://open.spotify.com/embed/playlist/3ZnUknHIAXK3E4D7kPP4aC?utm_source=generator",
+      "tracks_to_listen_for": [
+        {
+          "title": "My Song",
+          "artist": "Keith Jarrett"
+        },
+        {
+          "title": "In a Silent Way",
+          "artist": "Miles Davis"
+        },
+        {
+          "title": "As Time Goes By",
+          "artist": "Bill Evans"
+        }
+      ],
+      "tags": [
+        "ambient jazz",
+        "ECM",
+        "lyrical",
+        "atmospheric"
+      ],
+      "note": "既存のSpotify公開プレイリストを紹介・埋め込み表示するものです。ユーザーアカウントへの新規プレイリスト作成ではありません。"
     }
   ]
 }

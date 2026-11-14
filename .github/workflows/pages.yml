@@ -83,6 +83,19 @@ jobs:
               if line.strip():
                   row_validator.validate(json.loads(line))
           print("JSON Schema OK: data/atlas/relations.jsonl")
+          sample = json.loads(Path("schema/atlas.example.json").read_text(encoding="utf-8"))
+          for key in ("places", "eras", "concepts", "works"):
+              validator.validate({key: sample[key]})
+          row_validator.validate(sample["relation"])
+          valid_fixture = json.loads(Path("schema/fixtures/valid-places.json").read_text(encoding="utf-8"))
+          validator.validate({"places": valid_fixture})
+          invalid_fixture = json.loads(Path("schema/fixtures/invalid-place-coordinate.json").read_text(encoding="utf-8"))
+          try:
+              validator.validate({"places": invalid_fixture})
+          except Exception:
+              print("Expected rejection: invalid-place-coordinate.json")
+          else:
+              raise SystemExit("Invalid fixture unexpectedly passed")
           PY
 
       - name: Validate Music Atlas references

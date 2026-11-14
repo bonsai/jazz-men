@@ -64,7 +64,8 @@ input[type=search]:focus{border-color:var(--cyan)}.count{color:var(--muted);font
  const render=()=>{
   const r=route();active(r.page);
   if(r.page==='artist')renderDetail(decodeURIComponent(r.id));
-  else if(r.page==='playlists')renderPlaylists();\n  else if(r.page==='radio')renderRadio();
+  else if(r.page==='playlists')renderPlaylists();
+  else if(r.page==='radio')renderRadio();
   else renderList(['world','japan'].includes(r.page)?r.page:'all');
   window.scrollTo(0,0);
  };

@@ -73,7 +73,6 @@ nav a:active{transform:scale(.94)}
   header,nav,main,.sources{padding-left:max(20px,env(safe-area-inset-left));padding-right:max(20px,env(safe-area-inset-right))}
   main{padding-bottom:max(76px,env(safe-area-inset-bottom))}
 }
-/* SVG radio player */
 .radio-stage{display:grid;grid-template-columns:1fr;gap:20px;max-width:720px}
 .radio-svg-wrap{position:relative;width:100%;max-width:420px;margin:0 auto;cursor:pointer;user-select:none;-webkit-tap-highlight-color:transparent}
 .radio-svg-wrap svg{width:100%;height:auto;display:block;filter:drop-shadow(0 18px 40px rgba(0,0,0,.45));transition:transform .4s cubic-bezier(.34,1.56,.64,1)}
@@ -154,7 +153,7 @@ nav a:active{transform:scale(.94)}
  const renderPlaylists=()=>{
   const onlySpotify=(state.playlists||[]).filter(p=>(p.platform||'').toLowerCase()==='spotify');
   const spotify=onlySpotify.map(p=>'<article class="playlist-card"><div class="kicker">'+esc((p.tags&&p.tags[0])||p.platform||'MUSIC')+' · '+esc(p.platform||'SELECTION')+'</div><h2>'+esc(p.title)+'</h2><div class="subtitle">'+esc(p.subtitle||'')+'</div><p class="playlist-copy">'+esc(p.description||'')+'</p><iframe class="spotify-frame" src="'+esc(p.embed_url)+'" title="'+esc(p.title)+'" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin"></iframe><a class="playlist-link" href="'+esc(p.spotify_url)+'" target="_blank" rel="noopener">↗ Spotifyで開く</a></article>').join('');
-  app.innerHTML='<h2 style="font-size:clamp(28px,5vw,42px);margin:8px 0 18px">PLAYLISTS</h2><div class="eyebrow">SPOTIFY · PUBLIC PLAYLISTS</div><p class="playlist-copy">Spotify公開プレイリストのみ。YouTube候補は VIDEO 3 へ。</p><div class="playlist-grid">'+(spotify||'<p class="empty">まだありません。</p>')+'</div>';
+  app.innerHTML='<h2 style="font-size:clamp(28px,5vw,42px);margin:8px 0 18px">PLAYLISTS</h2><div class="eyebrow">SPOTIFY · PUBLIC PLAYLISTS</div><p class="playlist-copy">Spotify公開プレイリストのみ。</p><div class="playlist-grid">'+(spotify||'<p class="empty">まだありません。</p>')+'</div>';
  };
  const renderVideo3=()=>{
   const seeds=state.youtubeSeeds||[];
@@ -166,23 +165,23 @@ nav a:active{transform:scale(.94)}
  };
  const renderRadio=()=>{
   const stock=[
-    {title:'NTS 1', subtitle:'Live · Channel 1', url:'https://www.nts.live/', stream:'https://stream-relay-geo.ntslive.net/stream?client=direct', note:'本線ライブ。今ロンドンで流れている音。'},
-    {title:'NTS 2', subtitle:'Live · Channel 2', url:'https://www.nts.live/', stream:'https://stream-relay-geo.ntslive.net/stream2?client=direct', note:'もう一本のライブチャンネル。'},
-    {title:'Slow Focus', subtitle:'Ambient · Drone · Ragas', url:'https://www.nts.live/infinite-mixtapes/slow-focus', stream:'https://stream-mixtape-geo.ntslive.net/mixtape?client=direct', note:'アンビエントとドローンの無限ミックス。'},
-    {title:'Poolside', subtitle:'Balearic · Soft focus', url:'https://www.nts.live/infinite-mixtapes/poolside', stream:'https://stream-mixtape-geo.ntslive.net/mixtape4?client=direct', note:'やわらかい午後の選曲。'},
-    {title:'4 To The Floor', subtitle:'House pulse', url:'https://www.nts.live/infinite-mixtapes/4-to-the-floor', stream:'https://stream-mixtape-geo.ntslive.net/mixtape5?client=direct', note:'ハウスの脈動。'},
-    {title:'The Tube', subtitle:'Archive digs', url:'https://www.nts.live/infinite-mixtapes/the-tube', stream:'https://stream-mixtape-geo.ntslive.net/mixtape26?client=direct', note:'アーカイブ掘り出し系。'},
-    {title:'Field Recordings', subtitle:'環境音', url:'https://www.nts.live/infinite-mixtapes/field-recordings', stream:'https://stream-mixtape-geo.ntslive.net/mixtape23?client=direct', note:'世界各地のフィールドレコーディング。'},
+    {title:'NTS 1', subtitle:'Live · Channel 1', url:'https://www.nts.live/', stream:'https://stream-relay-geo.ntslive.net/stream', note:'本線ライブ。今ロンドンで流れている音。'},
+    {title:'NTS 2', subtitle:'Live · Channel 2', url:'https://www.nts.live/', stream:'https://stream-relay-geo.ntslive.net/stream2', note:'もう一本のライブチャンネル。'},
+    {title:'Slow Focus', subtitle:'Ambient · Drone · Ragas', url:'https://www.nts.live/infinite-mixtapes/slow-focus', stream:'https://stream-mixtape-geo.ntslive.net/mixtape', note:'アンビエントとドローンの無限ミックス。'},
+    {title:'Poolside', subtitle:'Balearic · Soft focus', url:'https://www.nts.live/infinite-mixtapes/poolside', stream:'https://stream-mixtape-geo.ntslive.net/mixtape4', note:'やわらかい午後の選曲。'},
+    {title:'4 To The Floor', subtitle:'House pulse', url:'https://www.nts.live/infinite-mixtapes/4-to-the-floor', stream:'https://stream-mixtape-geo.ntslive.net/mixtape5', note:'ハウスの脈動。'},
+    {title:'The Tube', subtitle:'Archive digs', url:'https://www.nts.live/infinite-mixtapes/the-tube', stream:'https://stream-mixtape-geo.ntslive.net/mixtape26', note:'アーカイブ掘り出し系。'},
+    {title:'Field Recordings', subtitle:'環境音', url:'https://www.nts.live/infinite-mixtapes/field-recordings', stream:'https://stream-mixtape-geo.ntslive.net/mixtape23', note:'世界各地のフィールドレコーディング。'},
     {title:'The Jazz Collection', subtitle:'Free · Spiritual · Modal', url:'https://www.nts.live/radio/collections/the-jazz-collection', stream:null, note:'ジャズ特集アーカイブ（NTSサイトで聴く）。'}
   ];
   let current=stock[Math.floor(Math.random()*stock.length)];
   let audio=null;
   const stopAudio=()=>{if(audio){try{audio.pause();audio.removeAttribute('src');audio.load();}catch(e){}audio=null;};};
-  const svgRadio=(playing)=>'<div class="radio-svg-wrap'+(playing?' is-playing':'')+'" id="radio-svg" role="button" tabindex="0" aria-label="再生/停止">\n<svg viewBox="0 0 320 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">\n  <defs>\n    <linearGradient id="rb" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#2a3340"/><stop offset="100%" stop-color="#151a22"/></linearGradient>\n    <linearGradient id="gl" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#d7b77a"/><stop offset="100%" stop-color="#8dc9c8"/></linearGradient>\n    <filter id="soft"><feGaussianBlur stdDeviation="1.2"/></filter>\n  </defs>\n  <rect x="24" y="36" width="272" height="152" rx="22" fill="url(#rb)" stroke="#4a5568" stroke-width="2"/>\n  <rect x="40" y="52" width="140" height="72" rx="10" fill="#0d1118" stroke="#3a4555"/>\n  <g class="eq" transform="translate(58 108)">\n    <rect class="eq-bar" x="0" y="-28" width="8" height="28" rx="2" fill="#8dc9c8"/>\n    <rect class="eq-bar" x="16" y="-40" width="8" height="40" rx="2" fill="#d7b77a"/>\n    <rect class="eq-bar" x="32" y="-22" width="8" height="22" rx="2" fill="#8dc9c8"/>\n    <rect class="eq-bar" x="48" y="-36" width="8" height="36" rx="2" fill="#d7b77a"/>\n    <rect class="eq-bar" x="64" y="-26" width="8" height="26" rx="2" fill="#8dc9c8"/>\n  </g>\n  <text x="110" y="72" text-anchor="middle" fill="#8dc9c8" font-family="Arial" font-size="11" letter-spacing="2">NTS</text>\n  <circle class="dial" cx="230" cy="88" r="34" fill="#1a2030" stroke="#d7b77a" stroke-width="3"/>\n  <circle cx="230" cy="88" r="8" fill="#d7b77a"/>\n  <line class="dial" x1="230" y1="88" x2="230" y2="60" stroke="#8dc9c8" stroke-width="3" stroke-linecap="round"/>\n  <circle cx="70" cy="155" r="14" fill="#242c38" stroke="#66717f" stroke-width="2"/>\n  <circle cx="110" cy="155" r="14" fill="#242c38" stroke="#66717f" stroke-width="2"/>\n  <rect x="150" y="145" width="110" height="20" rx="10" fill="#0d1118" stroke="#3a4555"/>\n  <text id="radio-freq" x="205" y="159" text-anchor="middle" fill="#a9adba" font-family="Arial" font-size="10">'+esc(current.title).slice(0,18)+'</text>\n  <path d="M48 36 Q48 18 70 18 L250 18 Q272 18 272 36" fill="none" stroke="#4a5568" stroke-width="4" stroke-linecap="round"/>\n  <circle cx="160" cy="18" r="6" fill="#8dc9c8" filter="url(#soft)"/>\n</svg></div>';
+  const svgRadio=(playing)=>'<div class="radio-svg-wrap'+(playing?' is-playing':'')+'" id="radio-svg" role="button" tabindex="0" aria-label="再生/停止">\n<svg viewBox="0 0 320 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">\n  <defs>\n    <linearGradient id="rb" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#2a3340"/><stop offset="100%" stop-color="#151a22"/></linearGradient>\n  </defs>\n  <rect x="24" y="36" width="272" height="152" rx="22" fill="url(#rb)" stroke="#4a5568" stroke-width="2"/>\n  <rect x="40" y="52" width="140" height="72" rx="10" fill="#0d1118" stroke="#3a4555"/>\n  <g class="eq" transform="translate(58 108)">\n    <rect class="eq-bar" x="0" y="-28" width="8" height="28" rx="2" fill="#8dc9c8"/>\n    <rect class="eq-bar" x="16" y="-40" width="8" height="40" rx="2" fill="#d7b77a"/>\n    <rect class="eq-bar" x="32" y="-22" width="8" height="22" rx="2" fill="#8dc9c8"/>\n    <rect class="eq-bar" x="48" y="-36" width="8" height="36" rx="2" fill="#d7b77a"/>\n    <rect class="eq-bar" x="64" y="-26" width="8" height="26" rx="2" fill="#8dc9c8"/>\n  </g>\n  <text x="110" y="72" text-anchor="middle" fill="#8dc9c8" font-family="Arial" font-size="11" letter-spacing="2">NTS</text>\n  <circle class="dial" cx="230" cy="88" r="34" fill="#1a2030" stroke="#d7b77a" stroke-width="3"/>\n  <circle cx="230" cy="88" r="8" fill="#d7b77a"/>\n  <line class="dial" x1="230" y1="88" x2="230" y2="60" stroke="#8dc9c8" stroke-width="3" stroke-linecap="round"/>\n  <circle cx="70" cy="155" r="14" fill="#242c38" stroke="#66717f" stroke-width="2"/>\n  <circle cx="110" cy="155" r="14" fill="#242c38" stroke="#66717f" stroke-width="2"/>\n  <rect x="150" y="145" width="110" height="20" rx="10" fill="#0d1118" stroke="#3a4555"/>\n  <text id="radio-freq" x="205" y="159" text-anchor="middle" fill="#a9adba" font-family="Arial" font-size="10">'+esc(current.title).slice(0,18)+'</text>\n  <path d="M48 36 Q48 18 70 18 L250 18 Q272 18 272 36" fill="none" stroke="#4a5568" stroke-width="4" stroke-linecap="round"/>\n  <circle cx="160" cy="18" r="6" fill="#8dc9c8"/>\n</svg></div>';
 
   const paint=(playing=false)=>{
     const canPlay=!!current.stream;
-    app.innerHTML='<div class="eyebrow">NTS · LISTEN HERE</div><h2 style="font-size:clamp(28px,5vw,42px);margin:8px 0 12px">NTS RADIO</h2><p class="playlist-copy">毎回ひとつ。ラジオ本体をタップするか PLAY でその場で再生。</p><div class="radio-stage">'+svgRadio(playing)+'<div class="radio-status '+(playing?'live':'')+'" id="radio-status">'+(playing?'● LIVE — 再生中':(canPlay?'タップで再生':'この枠はサイトで聴く'))+'</div><div class="radio-controls"><button type="button" class="play-btn'+(playing?' is-on':'')+'" id="radio-play">'+(playing?'■ STOP':'▶ PLAY')+'</button><button type="button" id="radio-next">別のおすすめ</button><a href="'+esc(current.url)+'" target="_blank" rel="noopener">↗ NTSで開く</a></div><article class="radio-meta-card"><div class="kicker">NOW PICKED</div><h2>'+esc(current.title)+'</h2><div class="subtitle">'+esc(current.subtitle)+'</div><p class="playlist-copy">'+esc(current.note)+'</p></article></div>';
+    app.innerHTML='<div class="eyebrow">NTS · LISTEN HERE</div><h2 style="font-size:clamp(28px,5vw,42px);margin:8px 0 12px">NTS RADIO</h2><p class="playlist-copy">毎回ひとつ。ラジオ本体をタップするか PLAY でその場で再生。再生できない場合は NTS サイトが開きます。</p><div class="radio-stage">'+svgRadio(playing)+'<div class="radio-status '+(playing?'live':'')+'" id="radio-status">'+(playing?'● LIVE — 再生中':(canPlay?'タップで再生':'この枠はサイトで聴く'))+'</div><div class="radio-controls"><button type="button" class="play-btn'+(playing?' is-on':'')+'" id="radio-play">'+(playing?'■ STOP':'▶ PLAY')+'</button><button type="button" id="radio-next">別のおすすめ</button><a href="'+esc(current.url)+'" target="_blank" rel="noopener">↗ NTSで開く</a></div><article class="radio-meta-card"><div class="kicker">NOW PICKED</div><h2>'+esc(current.title)+'</h2><div class="subtitle">'+esc(current.subtitle)+'</div><p class="playlist-copy">'+esc(current.note)+'</p></article></div>';
 
     const setPlaying=(on)=>{
       const wrap=document.getElementById('radio-svg');
@@ -197,18 +196,17 @@ nav a:active{transform:scale(.94)}
       if(!current.stream){window.open(current.url,'_blank','noopener');return;}
       if(audio && !audio.paused){stopAudio();setPlaying(false);return;}
       stopAudio();
-      audio=new Audio(current.stream);
-      audio.crossOrigin='anonymous';
-      audio.play().then(()=>setPlaying(true)).catch(()=>{
+      audio=new Audio();
+      audio.preload='none';
+      audio.src=current.stream;
+      const fail=msg=>{
         const st=document.getElementById('radio-status');
-        if(st){st.className='radio-status error';st.textContent='再生に失敗 — NTSで開くを試してください';}
+        if(st){st.className='radio-status error';st.textContent=msg||'再生不可 — NTSで開きます';}
         setPlaying(false);
-      });
-      audio.addEventListener('error',()=>{
-        const st=document.getElementById('radio-status');
-        if(st){st.className='radio-status error';st.textContent='ストリーム接続エラー';}
-        setPlaying(false);
-      });
+        setTimeout(()=>window.open(current.url,'_blank','noopener'),600);
+      };
+      audio.play().then(()=>setPlaying(true)).catch(()=>fail('自動再生がブロックされました'));
+      audio.addEventListener('error',()=>fail('ストリーム接続エラー'));
     };
 
     const bind=(id,fn)=>{const el=document.getElementById(id);if(el)el.addEventListener('click',fn);};

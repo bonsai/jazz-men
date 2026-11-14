@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0.0",
+  "playlists": [
+    {
+      "id": "freaky-free-jazz",
+      "title": "FREAKY FREE JAZZ",
+      "subtitle": "深夜の脳内航路。美しくなくていい、整っていなくていい。",
+      "description": "フリージャズ、集団即興、スピリチュアル・ジャズ、ノイズの境界を横断するSpotify公開プレイリスト。祈りのような長尺演奏から、耳をひっかく即興まで。音楽の安全運転をやめたい夜に。",
+      "platform": "Spotify",
+      "playlist_title": "freejazz (and some historical contours)",
+      "curator": "tomjennings01",
+      "spotify_url": "https://open.spotify.com/playlist/1XTvfvCCNzvBF5Qq9INVhX",
+      "embed_url": "https://open.spotify.com/embed/playlist/1XTvfvCCNzvBF5Qq9INVhX?utm_source=generator",
+      "tracks_to_listen_for": [
+        {
+          "title": "Ascension - Edition I / Pt. 1",
+          "artist": "John Coltrane"
+        },
+        {
+          "title": "Music Is the Healing Force of the Universe",
+          "artist": "Albert Ayler"
+        },
+        {
+          "title": "Phase 1, 2, 3, 4",
+          "artist": "Sunny Murray"
+        },
+        {
+          "title": "Universal Consciousness",
+          "artist": "Alice Coltrane"
+        },
+        {
+          "title": "Rationed Rot",
+          "artist": "Wolf Eyes, Anthony Braxton"
+        },
+        {
+          "title": "Wild Fire Bare",
+          "artist": "Matana Roberts"
+        },
+        {
+          "title": "Free Jazz - Pts. 1 & 2",
+          "artist": "Ornette Coleman"
+        },
+        {
+          "title": "Journey in Satchidananda",
+          "artist": "Alice Coltrane"
+        }
+      ],
+      "tags": [
+        "free jazz",
+        "avant-garde",
+        "spiritual jazz",
+        "free improvisation",
+        "experimental"
+      ],
+      "note": "既存のSpotify公開プレイリストを紹介・埋め込み表示するものです。ユーザーアカウントへの新規プレイリスト作成ではありません。"
+    }
+  ]
+}

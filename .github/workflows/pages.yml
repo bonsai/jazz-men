@@ -7,6 +7,7 @@ on:
       - "index.html"
       - "data/**"
       - "japan/**"
+      - "scripts/**"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
 
@@ -52,6 +53,9 @@ jobs:
               assert len(ids) == len(set(ids)), f"Duplicate artist IDs in {path}"
               print(f"{path}: {len(artists)} artists")
           PY
+
+      - name: Validate Music Atlas data
+        run: python scripts/validate_atlas.py
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5

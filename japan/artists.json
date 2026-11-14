@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "edition": "japan",
   "language": "ja",
-  "artist_count": 10,
+  "artist_count": 13,
   "artists": [
     {
       "id": "masayuki-takayanagi",
@@ -173,6 +173,60 @@
       ],
       "youtube_search": "Keiji Haino live solo guitar",
       "youtube_search_url": "https://www.youtube.com/results?search_query=Keiji%20Haino%20live%20solo%20guitar"
+    },
+    {
+      "id": "yasuaki-shimizu",
+      "name": "清水靖晃",
+      "name_en": "Yasuaki Shimizu",
+      "instrument": [
+        "テナーサックス",
+        "サックス"
+      ],
+      "profile": "サックスをジャズの語法だけに閉じ込めず、ニューウェーブ、電子音響、現代音楽、バッハへと自在に越境する作曲家・演奏家。マライアでの鋭いアンサンブルから、ソロ作『IQ-179』の異形のポップ感覚、サキソフォネッツの緻密な響きまで、その音はいつも既成のジャンルの外側にある。サックスの息づかいを、都市の風景や建築のような音響へ変えてしまう。",
+      "albums": [
+        "IQ-179 (1981)",
+        "案山子 / Kakashi (1982)",
+        "Music for Commercials (1987)"
+      ],
+      "youtube_search": "Yasuaki Shimizu saxophone IQ-179 live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Yasuaki%20Shimizu%20saxophone%20IQ-179%20live"
+    },
+    {
+      "id": "kei-matsumaru",
+      "name": "松丸契",
+      "name_en": "Kei Matsumaru",
+      "instrument": [
+        "アルトサックス",
+        "ソプラノサックス",
+        "テナーサックス",
+        "クラリネット"
+      ],
+      "profile": "即興と作曲、ジャズと実験音楽、バンドとソロの境界を軽やかに横断する現代のサックス奏者。SMTKやm°fe、石橋英子、大友良英、Dos Monosらとの活動で、鋭い音色と柔軟な発想をシーンへ持ち込む。『The Moon, Its Recollections Abstracted』では、抽象的な音の断片が緻密な構成と出会い、自由でありながら強い輪郭を持つ音楽へと結実する。betcover!!への参加など、ジャズの外側にも広がる存在。",
+      "albums": [
+        "Nothing Unspoken Under the Sun (2020)",
+        "The Moon, Its Recollections Abstracted (2022)",
+        "THINKKAISM (SMTK, 2019)"
+      ],
+      "youtube_search": "Kei Matsumaru saxophone live betcover",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Kei%20Matsumaru%20saxophone%20live%20betcover"
+    },
+    {
+      "id": "toshiyuki-honda",
+      "name": "本多俊之",
+      "name_en": "Toshiyuki Honda",
+      "instrument": [
+        "アルトサックス",
+        "ソプラノサックス",
+        "フルート"
+      ],
+      "profile": "フュージョンの躍動とジャズの即興性を自在に行き来する、日本を代表するサックス奏者・作編曲家。シャープで伸びやかなサウンドは、ソロ作品からビッグバンド、映画音楽まで幅広い。『マルサの女』のテーマやテレビ番組の音楽でも知られる一方、チック・コリアら海外の巨匠とも共演。サックスの華やかさと、作曲家としての構築力を同時に味わわせてくれる。",
+      "albums": [
+        "Burnin' Waves (1978)",
+        "Opa! Com Deus (1979)",
+        "Spanish Tears (1980)"
+      ],
+      "youtube_search": "Toshiyuki Honda saxophone live Burnin Waves",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Toshiyuki%20Honda%20saxophone%20live%20Burnin%20Waves"
     }
   ]
 }

@@ -53,6 +53,77 @@
         "experimental"
       ],
       "note": "既存のSpotify公開プレイリストを紹介・埋め込み表示するものです。ユーザーアカウントへの新規プレイリスト作成ではありません。"
+    },
+    {
+      "id": "spiritual-jazz-space-cosmic-funk",
+      "title": "SPIRITUAL JAZZ / COSMIC FUNK",
+      "subtitle": "祈り、宇宙、スピリチュアルな高揚。",
+      "description": "60〜70年代のスピリチュアル・ジャズとスペース・ジャズを中心にした長尺プレイリスト。Alice Coltrane、Lonnie Liston Smithらの浮遊感あるサウンドから、深い精神性とコズミックなグルーヴへ。",
+      "platform": "Spotify",
+      "playlist_title": "Spiritual Jazz / Space Jazz / Cosmic Funk",
+      "curator": "Wandara",
+      "spotify_url": "https://open.spotify.com/playlist/4SSnigeLcl2yFUbH858LaW",
+      "embed_url": "https://open.spotify.com/embed/playlist/4SSnigeLcl2yFUbH858LaW?utm_source=generator",
+      "tracks_to_listen_for": [
+        {
+          "title": "Angel of Air / Angel of Water",
+          "artist": "Alice Coltrane & Carlos Santana"
+        },
+        {
+          "title": "Footprints",
+          "artist": "Lonnie Liston Smith & The Cosmic Echoes"
+        },
+        {
+          "title": "Expansions",
+          "artist": "Lonnie Liston Smith & The Cosmic Echoes"
+        }
+      ],
+      "tags": [
+        "spiritual jazz",
+        "space jazz",
+        "cosmic funk",
+        "Alice Coltrane",
+        "Lonnie Liston Smith"
+      ],
+      "note": "Spotifyの公開プレイリスト。約164曲・約16時間。"
+    },
+    {
+      "id": "sound-of-free-improvisation",
+      "title": "THE SOUND OF FREE IMPROVISATION",
+      "subtitle": "即興の現場。予定調和のない音楽。",
+      "description": "Evan Parker、Derek Bailey、Pauline Oliveros、Peter Brötzmannらを横断するフリー・インプロヴィゼーションの入口。ジャズの形式から離れ、音そのものの対話や偶然性を楽しむためのリスト。",
+      "platform": "Spotify",
+      "playlist_title": "The Sound of Free Improvisation",
+      "curator": "The Sounds of Spotify",
+      "spotify_url": "https://open.spotify.com/playlist/2NMVEGeiUeIosCna7tcMUp",
+      "embed_url": "https://open.spotify.com/embed/playlist/2NMVEGeiUeIosCna7tcMUp?utm_source=generator",
+      "tracks_to_listen_for": [
+        {
+          "title": "WW1",
+          "artist": "Evan Parker"
+        },
+        {
+          "title": "Stella By Starlight",
+          "artist": "Derek Bailey"
+        },
+        {
+          "title": "Suiren",
+          "artist": "Pauline Oliveros, Stuart Dempster & Panaiotis"
+        },
+        {
+          "title": "Five Eyes",
+          "artist": "John Butcher & Andy Moor"
+        }
+      ],
+      "tags": [
+        "free improvisation",
+        "improvised music",
+        "Evan Parker",
+        "Derek Bailey",
+        "Pauline Oliveros",
+        "experimental"
+      ],
+      "note": "Spotifyの公開プレイリスト。即興演奏の多様なアプローチを俯瞰できます。"
     }
   ]
 }

@@ -25,6 +25,7 @@ PRECISIONS = {"exact", "approximate", "unknown"}
 class Validator:
     def __init__(self) -> None:
         self.errors: list[str] = []
+        self.all_ids: set[str] = set()
         self.ids: dict[str, set[str]] = {
             "artist": set(), "place": set(), "era": set(),
             "concept": set(), "work": set(),
@@ -61,8 +62,9 @@ class Validator:
         if not isinstance(value, str) or not ID_RE.fullmatch(value):
             self.error(where, "id must be lowercase kebab-case")
             return
-        if value in self.ids[kind]:
-            self.error(where, f"duplicate {kind} id: {value}")
+        if value in self.all_ids:
+            self.error(where, f"duplicate entity id across the atlas: {value}")
+        self.all_ids.add(value)
         self.ids[kind].add(value)
 
     def strings(self, value: object, where: str) -> list[str]:
@@ -127,8 +129,13 @@ class Validator:
                     isinstance(value, bool) or not isinstance(value, (int, float)) or not low <= value <= high
                 ):
                     self.error(w, f"{field} must be between {low} and {high}, or null")
-            if row.get("precision") not in PRECISIONS:
+            precision = row.get("precision")
+            if precision not in PRECISIONS:
                 self.error(w, f"precision must be one of {sorted(PRECISIONS)}")
+            elif lat is None and precision != "unknown":
+                self.error(w, "precision must be unknown when coordinates are null")
+            elif lat is not None and precision == "unknown":
+                self.error(w, "precision cannot be unknown when coordinates are supplied")
             self.urls(row.get("sources", []), f"{w}.sources")
 
         eras = self.load_json("eras.json", "eras")

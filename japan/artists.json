@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0.0",
+  "edition": "japan",
+  "language": "ja",
+  "artist_count": 10,
+  "artists": [
+    {
+      "id": "masayuki-takayanagi",
+      "name": "高柳昌行",
+      "name_en": "Masayuki Takayanagi",
+      "instrument": [
+        "ギター"
+      ],
+      "profile": "日本のフリージャズがまだ輪郭を持たなかった時代、ギターの音量と持続を極限まで押し広げた先駆者。旋律やコードを解体し、音の粒子とノイズ、沈黙の圧力で空間そのものを描き直す。New Directionの演奏では、静かな投影から轟音の塊へと音楽が変貌する。阿部薫との共演は、即興が対話であると同時に格闘でもあることを刻みつけた。後続のノイズや即興音楽に長い影を落とす、日本の音響革命の起点。",
+      "albums": [
+        "Independence: Tread on Sure Ground (1970)",
+        "Mass Projection (1970/2001)",
+        "Free Form Suite (1972)"
+      ],
+      "youtube_search": "Masayuki Takayanagi Mass Projection live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Masayuki%20Takayanagi%20Mass%20Projection%20live"
+    },
+    {
+      "id": "kaoru-abe",
+      "name": "阿部薫",
+      "name_en": "Kaoru Abe",
+      "instrument": [
+        "アルトサックス",
+        "バスクラリネット",
+        "ハーモニカ"
+      ],
+      "profile": "阿部薫の音は、サックスという管の内側から、剥き出しの感情がそのまま噴き出すようだ。息の擦れ、鋭い高音、沈黙の裂け目。そこには整った物語よりも、今この瞬間にしか存在しない切迫した生がある。高柳昌行とのデュオでは、音と音が互いを追い詰めながら、予測不能な地形を切り開く。短い生涯と膨大な録音が、伝説だけでは片づけられない強度を残した。日本の即興音楽を語るうえで避けて通れない存在。",
+      "albums": [
+        "解体的交感 / Kaitai-teki Kohkan (1970)",
+        "Gradually Projection (1970)",
+        "Mort à Crédit (1976)"
+      ],
+      "youtube_search": "Kaoru Abe solo saxophone live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Kaoru%20Abe%20solo%20saxophone%20live"
+    },
+    {
+      "id": "yosuke-yamashita",
+      "name": "山下洋輔",
+      "name_en": "Yosuke Yamashita",
+      "instrument": [
+        "ピアノ"
+      ],
+      "profile": "ピアノに向かう姿は、鍵盤と格闘する演者であり、音の嵐を指揮する踊り手でもある。山下洋輔トリオは、ジャズの形式を大胆に揺さぶり、奔放な即興と強靱な構成力を同時に響かせた。打鍵は激しく、ユーモアは軽やか。日本の前衛表現や時代の熱気とも交差しながら、自由を難解な理論ではなく、身体でつかみ取る歓びとして示した。鍵盤の向こうに、まだ誰も踏み入れていない広場を開くピアニスト。",
+      "albums": [
+        "Concert (1973)",
+        "Clay (1974)",
+        "Chiasma (1975)"
+      ],
+      "youtube_search": "Yosuke Yamashita Trio Clay live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Yosuke%20Yamashita%20Trio%20Clay%20live"
+    },
+    {
+      "id": "masahiko-togashi",
+      "name": "富樫雅彦",
+      "name_en": "Masahiko Togashi",
+      "instrument": [
+        "ドラム",
+        "パーカッション"
+      ],
+      "profile": "富樫雅彦のリズムは、強く打つことより、音と音のあいだに何が生まれるかを聴かせる。事故によって身体の自由を大きく制限されても、彼は演奏をやめず、独自の奏法と音響世界を切り開いた。小さな打音、余白、響きの残像が、静かな宇宙のように広がっていく。『Spiritual Nature』や『Rings』に聴こえるのは、技巧の誇示ではなく、身体と音楽の関係を問い直す深い集中だ。制約を創造の条件へ変えた、日本を代表する打楽器奏者。",
+      "albums": [
+        "We Now Create (1969)",
+        "Spiritual Nature (1975)",
+        "Rings (1975)"
+      ],
+      "youtube_search": "Masahiko Togashi Rings live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Masahiko%20Togashi%20Rings%20live"
+    },
+    {
+      "id": "motoharu-yoshizawa",
+      "name": "吉沢元治",
+      "name_en": "Motoharu Yoshizawa",
+      "instrument": [
+        "コントラバス"
+      ],
+      "profile": "吉沢元治は、コントラバスを低音の土台という役割から解放した。弦を擦り、叩き、震わせ、楽器の内部に潜む無数の音を引き出す。ひとりの即興では、音の高さよりも質感や振動が前景に現れ、聴き手は巨大な弦の内部を旅するようだ。高柳昌行らとの共演では、轟音の中にも独自の輪郭を刻んだ。低音とは音楽を支えるものだけではない。世界の床を揺らし、まだ名づけられていない響きを立ち上げる場所なのだ。",
+      "albums": [
+        "Cracked Mirrors (1975)",
+        "Empty Hats (1994)",
+        "Aida's Call"
+      ],
+      "youtube_search": "Motoharu Yoshizawa solo bass improvisation",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Motoharu%20Yoshizawa%20solo%20bass%20improvisation"
+    },
+    {
+      "id": "akira-sakata",
+      "name": "坂田明",
+      "name_en": "Akira Sakata",
+      "instrument": [
+        "アルトサックス",
+        "クラリネット"
+      ],
+      "profile": "坂田明のサックスには、野性と知性、笑いと怒りが同居する。鋭いフリージャズの咆哮を放ったかと思えば、民謡や童謡の記憶を呼び起こす旋律を奏でる。演奏は身体全体から立ち上がり、声や身振りまでも音楽の一部にしてしまう。山下洋輔トリオなどで培った奔放さを持ちながら、独自のユーモアと深い歌心を失わない。ジャンルの境界を越えて、音楽が人間の生そのものに触れる瞬間をつくる表現者。",
+      "albums": [
+        "Pochi (1976)",
+        "20th Century B.C. (1980)",
+        "Fisherman's.com (2001)"
+      ],
+      "youtube_search": "Akira Sakata live saxophone",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Akira%20Sakata%20live%20saxophone"
+    },
+    {
+      "id": "itaru-oki",
+      "name": "沖至",
+      "name_en": "Itaru Oki",
+      "instrument": [
+        "トランペット",
+        "フリューゲルホルン"
+      ],
+      "profile": "沖至のトランペットは、鋭い閃光のように空間を切り裂きながら、どこか遠い土地の歌を連れてくる。日本のフリージャズ黎明期を担い、欧州の即興音楽シーンとも深く結びついた。音を押し出す力と、仲間の呼吸に身を預ける柔らかさ。その両方が演奏に宿る。国境を越えた共演を重ねながらも、響きの根には独特の日本的な間合いがある。ひとつの音で景色を変える、国際派の先駆者。",
+      "albums": [
+        "刹那 / Setsuna (1975)",
+        "鏡の向こう / Beyond the Mirror",
+        "Itaru Oki & François Tusques recordings"
+      ],
+      "youtube_search": "Itaru Oki trumpet live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Itaru%20Oki%20trumpet%20live"
+    },
+    {
+      "id": "toshinori-kondo",
+      "name": "近藤等則",
+      "name_en": "Toshinori Kondo",
+      "instrument": [
+        "トランペット",
+        "エレクトロニクス"
+      ],
+      "profile": "近藤等則は、トランペットを電気と結びつけ、音を都市の空や海辺、巨大な空間へ放った。生の管が持つ息づかいにエフェクトや電子音を重ね、ジャズとロック、即興とテクノロジーの境界を軽やかに越える。IMAでの活動や野外での演奏は、音楽をステージの枠から解き放つ試みでもあった。鋭い一音は信号のように遠くへ届き、長い余韻は風景と混ざり合う。未来の音を、身体の呼吸から生み出したトランペッター。",
+      "albums": [
+        "大変 / Taihen (1983)",
+        "Tokyo Rose (1986)",
+        "Charged (1993)"
+      ],
+      "youtube_search": "Toshinori Kondo IMA live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Toshinori%20Kondo%20IMA%20live"
+    },
+    {
+      "id": "otomo-yoshihide",
+      "name": "大友良英",
+      "name_en": "Otomo Yoshihide",
+      "instrument": [
+        "ギター",
+        "ターンテーブル",
+        "作曲"
+      ],
+      "profile": "大友良英は、ギターのノイズもレコードの針音も、音楽の外側に追いやられてきたものを主役にする。Ground Zeroではサンプリングと即興を大胆に衝突させ、その後は静かな即興、映画音楽、オーケストラまで活動を広げた。音を切り貼りする編集者であり、他者の音に耳を澄ます演奏家でもある。高柳昌行や阿部薫の系譜を受け取りながら、ジャンルを固定せず現在へ更新する。聴くことそのものを問い直す、現代日本の音楽家。",
+      "albums": [
+        "Revolutionary Pekinese Opera (1995)",
+        "Plays Standards (1997)",
+        "The Night Before the Death of the Sampling Virus (1993)"
+      ],
+      "youtube_search": "Otomo Yoshihide Ground Zero live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Otomo%20Yoshihide%20Ground%20Zero%20live"
+    },
+    {
+      "id": "keiji-haino",
+      "name": "灰野敬二",
+      "name_en": "Keiji Haino",
+      "instrument": [
+        "ギター",
+        "声",
+        "多楽器"
+      ],
+      "profile": "灰野敬二の音楽は、ロック、即興、ノイズ、古い歌の記憶をひとつの名前に閉じ込めない。ギターの轟音は祈りにも叫びにもなり、声は言葉になる前の感情を運ぶ。長い即興の中で、音は静寂から立ち上がり、崩れ、また別の姿で現れる。様式を守るより、自分の耳と身体が本当に反応する場所へ進み続ける。その姿勢は日本の実験音楽に大きな影響を与えた。音楽の限界を確かめるのではなく、限界の向こうへ歩き続ける表現者。",
+      "albums": [
+        "Watashi Dake? (1981)",
+        "Affection (1992)",
+        "So, Black Is Myself (1997)"
+      ],
+      "youtube_search": "Keiji Haino live solo guitar",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Keiji%20Haino%20live%20solo%20guitar"
+    }
+  ]
+}

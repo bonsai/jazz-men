@@ -114,12 +114,12 @@ nav a:active{transform:scale(.94)}
 <div class="subtitle">音楽のOSを書き換えた表現者たち</div>
 <p class="intro">ジャズの約束をほどき、音の境界を越え、まだ名前のない響きを探した音楽家たち。海外編と日本編を横断し、人物・名盤・演奏への入口をひとつの場所に集めたリスニング・アーカイブ。</p>
 </header>
-<nav aria-label="メインナビゲーション"><a href="#/all" data-route="all">ALL ARTISTS</a><a href="#/world" data-route="world">WORLD</a><a href="#/japan" data-route="japan">JAPAN</a><a href="#/playlists" data-route="playlists">PLAYLISTS</a><a href="#/radio" data-route="radio">NTS RADIO</a><a href="#/videos" data-route="videos">VIDEO</a><a href="#/videos2" data-route="videos2">VIDEO 2</a><a href="#/videos3" data-route="videos3">VIDEO 3</a></nav>
+<nav aria-label="メインナビゲーション"><a href="#/all" data-route="all">ALL ARTISTS</a><a href="#/world" data-route="world">WORLD</a><a href="#/japan" data-route="japan">JAPAN</a><a href="#/playlists" data-route="playlists">PLAYLISTS</a><a href="#/radio" data-route="radio">NTS RADIO</a><a href="#/videos" data-route="videos">VIDEO</a></nav>
 <main id="app"><p class="empty">音楽家のデータを読み込んでいます…</p></main>
 <section class="sources"><strong>参考・探索先</strong><br><a href="https://www.allmusic.com/style/free-jazz-ma0000002598/albums" target="_blank" rel="noopener">AllMusic — Free Jazz Album Highlights</a> ／ <a href="https://www.acclaimedmusic.net/genre/genre1266.htm" target="_blank" rel="noopener">Acclaimed Music — Free Jazz Albums</a><br>名盤は代表作の入口として選定。YouTubeは検索リンク形式です。</section>
 <script>
 (()=>{
- const esc=s=>String(s??'').replace(/&/g,'&').replace(/</g,'<').replace(/>/g,'>').replace(/"/g,'"');
+ const esc=s=>String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
  const app=document.getElementById('app'), navLinks=[...document.querySelectorAll('[data-route]')];
  const state={world:[],japan:[],playlists:[],videos:[],videos2:[],tracks:[],youtubeSeeds:[],youtubeSeedsData:null,query:''};
  const route=()=>{const h=(location.hash||'#/all').slice(2)||'all';const [page,...rest]=h.split('/');return{page,id:rest.join('/')};};
@@ -233,8 +233,7 @@ nav a:active{transform:scale(.94)}
   else if(r.page==='playlists')renderPlaylists();
   else if(r.page==='radio')renderRadio();
   else if(r.page==='videos')renderVideos();
-  else if(r.page==='videos2')renderVideo2();
-  else if(r.page==='videos3')renderVideo3();
+  else if(r.page==='videos2'||r.page==='videos3'){location.hash='#/videos';return;}
   else renderList(['world','japan'].includes(r.page)?r.page:'all');
   window.scrollTo(0,0);
  };

@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0.0",
+  "places": [
+    {
+      "id": "broken-place",
+      "name": "Broken",
+      "kind": "city",
+      "latitude": 120,
+      "longitude": 10,
+      "precision": "exact",
+      "sources": []
+    }
+  ]
+}

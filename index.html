@@ -22,7 +22,6 @@ input[type=search]:focus{border-color:var(--cyan)}.count{color:var(--muted);font
 .playlist-card{background:linear-gradient(145deg,#1c222d,#171b23);border:1px solid var(--line);border-radius:16px;padding:clamp(18px,4vw,30px);margin-bottom:18px}.playlist-card h2{font-size:clamp(27px,5vw,42px);margin:8px 0}.playlist-copy{max-width:760px;color:#d5d2cb}.playlist-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.video-card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;min-width:0}.video-thumb{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:10px;background:#10151d;margin:12px 0 10px}.video-thumb-placeholder{display:flex;align-items:center;justify-content:center;text-align:center;width:100%;aspect-ratio:16/9;border-radius:10px;margin:12px 0 10px;padding:20px;background:radial-gradient(ellipse at 75% 20%,#48515f 0,#242c38 40%,#10151d 100%);border:1px solid #414a58;color:#f1eee7;overflow:hidden}.video-thumb-placeholder strong{display:block;font-size:clamp(18px,3vw,28px);line-height:1.25}.video-thumb-placeholder span{display:block;margin-top:8px;color:#d7b77a;font:10px Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase}.video-card[hidden]{display:none}.survey-section{margin-top:34px;padding-top:22px;border-top:1px solid var(--line)}.survey-section h3{font:12px Arial,sans-serif;letter-spacing:.18em;color:var(--gold)}.survey-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.survey-item{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:#171c25;font:13px/1.5 Arial,sans-serif}.survey-item a{color:var(--cyan);white-space:nowrap}.survey-count{color:var(--muted);font:12px Arial,sans-serif}@media(max-width:700px){.survey-list{grid-template-columns:1fr}}.video-card h2{font-size:22px;line-height:1.3;margin:8px 0}.video-meta{font:12px Arial,sans-serif;color:var(--muted)}.video-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}.video-actions a{display:inline-flex;align-items:center;min-height:44px;padding:8px 12px;border:1px solid var(--line);border-radius:999px;color:var(--cyan);font:12px Arial,sans-serif;text-decoration:none}.video-frame{width:100%;aspect-ratio:16/9;border:0;border-radius:10px;margin-top:12px}.spotify-frame{display:block;width:100%;height:380px;border:0;border-radius:12px;margin-top:18px}.playlist-link{display:inline-block;margin-top:14px;color:var(--cyan);font:13px Arial,sans-serif}
 .empty,.load-error{padding:24px;border:1px solid var(--line);border-radius:12px;background:#171c25;color:var(--muted)}.load-error{border-color:#7a3b3b;color:#f0c4c4}.sources{max-width:1160px;margin:0 auto 48px;padding:0 28px;color:var(--muted);font:13px Arial,sans-serif}.sources a{color:var(--cyan)}
 @media(min-width:701px) and (max-width:1024px){header{padding:42px 24px 28px}main{padding-top:22px}.playlist-card{padding:20px}}@media(max-width:700px){header{padding:46px 20px 28px}nav{padding-left:20px;padding-right:20px}main,.sources{padding-left:20px;padding-right:20px}.grid,.playlist-grid{grid-template-columns:1fr}.artist-card{padding:18px}.spotify-frame{height:352px}}
-/* elastic / springy */
 .artist-card,.playlist-card,.video-card,.survey-item,.radio-hero{
   transition:transform .35s cubic-bezier(.34,1.56,.64,1),box-shadow .35s ease,border-color .25s ease,opacity .3s ease;
 }
@@ -74,6 +73,39 @@ nav a:active{transform:scale(.94)}
   header,nav,main,.sources{padding-left:max(20px,env(safe-area-inset-left));padding-right:max(20px,env(safe-area-inset-right))}
   main{padding-bottom:max(76px,env(safe-area-inset-bottom))}
 }
+/* SVG radio player */
+.radio-stage{display:grid;grid-template-columns:1fr;gap:20px;max-width:720px}
+.radio-svg-wrap{position:relative;width:100%;max-width:420px;margin:0 auto;cursor:pointer;user-select:none;-webkit-tap-highlight-color:transparent}
+.radio-svg-wrap svg{width:100%;height:auto;display:block;filter:drop-shadow(0 18px 40px rgba(0,0,0,.45));transition:transform .4s cubic-bezier(.34,1.56,.64,1)}
+.radio-svg-wrap:hover svg{transform:scale(1.03) translateY(-4px)}
+.radio-svg-wrap.is-playing svg{filter:drop-shadow(0 12px 28px rgba(141,201,200,.25))}
+.radio-svg-wrap .dial{transform-origin:center;transition:transform .6s cubic-bezier(.34,1.56,.64,1)}
+.radio-svg-wrap.is-playing .dial{animation:dial-spin 8s linear infinite}
+.radio-svg-wrap .eq-bar{transform-origin:bottom;animation:eq-pulse 1.1s ease-in-out infinite;opacity:.35}
+.radio-svg-wrap.is-playing .eq-bar{opacity:1}
+.radio-svg-wrap .eq-bar:nth-child(1){animation-delay:0s}
+.radio-svg-wrap .eq-bar:nth-child(2){animation-delay:.15s}
+.radio-svg-wrap .eq-bar:nth-child(3){animation-delay:.3s}
+.radio-svg-wrap .eq-bar:nth-child(4){animation-delay:.45s}
+.radio-svg-wrap .eq-bar:nth-child(5){animation-delay:.6s}
+@keyframes dial-spin{to{transform:rotate(360deg)}}
+@keyframes eq-pulse{0%,100%{transform:scaleY(.35)}50%{transform:scaleY(1)}}
+.radio-status{text-align:center;font:13px Arial,sans-serif;color:var(--muted);min-height:1.4em;margin-top:8px}
+.radio-status.live{color:var(--cyan)}
+.radio-status.error{color:#f0c4c4}
+.radio-controls{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:14px}
+.radio-controls button,.radio-controls a{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  min-height:52px;padding:12px 22px;border-radius:999px;border:1px solid var(--line);
+  background:#202632;color:var(--ink);font:15px Arial,sans-serif;cursor:pointer;
+  transition:transform .3s cubic-bezier(.34,1.56,.64,1),border-color .2s,background .2s,color .2s;
+  text-decoration:none}
+.radio-controls button:active,.radio-controls a:active{transform:scale(.94)}
+.radio-controls .play-btn{background:linear-gradient(145deg,#2a3a3a,#1e2a2a);border-color:#4a6a6a;color:var(--cyan);font-weight:600;min-width:140px}
+.radio-controls .play-btn.is-on{background:linear-gradient(145deg,#3a2a2a,#2a1e1e);border-color:#8a5050;color:#f0c4c4}
+.radio-controls button:hover,.radio-controls a:hover{border-color:var(--gold);color:var(--ink)}
+.radio-meta-card{background:linear-gradient(145deg,#1c222d,#171b23);border:1px solid var(--line);border-radius:18px;padding:clamp(18px,4vw,28px)}
+.radio-meta-card h2{font-size:clamp(26px,4vw,36px);margin:6px 0}
 </style>
 </head><body>
 <header>
@@ -134,27 +166,65 @@ nav a:active{transform:scale(.94)}
  };
  const renderRadio=()=>{
   const stock=[
-    {title:'NTS Live', subtitle:'Channel 1 / 2 · ライブ本線', url:'https://www.nts.live/', note:'世界中のDJが回す本線ストリーム。今流れている音から入る。'},
-    {title:'The Jazz Collection', subtitle:'Free · Spiritual · Modal', url:'https://www.nts.live/radio/collections/the-jazz-collection', note:'フリージャズからスピリチュアル、エチオピックスまで横断する特集アーカイブ。'},
-    {title:'Slow Focus', subtitle:'Ambient · Drone · Ragas', url:'https://www.nts.live/infinite-mixtapes/slow-focus', note:'アンビエントとドローンの無限ミックス。集中や深夜の背景に。'},
-    {title:'Field Recordings', subtitle:'環境音 · リスナー投稿', url:'https://www.nts.live/infinite-mixtapes/field-recordings', note:'世界各地のフィールドレコーディング。街や自然の気配。'},
-    {title:'Poolside', subtitle:'Balearic · Soft focus', url:'https://www.nts.live/infinite-mixtapes/poolside', note:'やわらかい午後の選曲。ジャズ寄りのチルも含む。'},
-    {title:'The Tube', subtitle:'Archive digs', url:'https://www.nts.live/infinite-mixtapes/the-tube', note:'アーカイブ掘り出し系の無限ミックス。'},
-    {title:'4 To The Floor', subtitle:'House pulse', url:'https://www.nts.live/infinite-mixtapes/4-to-the-floor', note:'ハウスの脈動。ジャズファンにも開かれたフロア感。'},
-    {title:'NTS Latest', subtitle:'新着ショー', url:'https://www.nts.live/latest', note:'直近の放送一覧。ジャズ枠を拾い歩きする入口。'}
+    {title:'NTS 1', subtitle:'Live · Channel 1', url:'https://www.nts.live/', stream:'https://stream-relay-geo.ntslive.net/stream?client=direct', note:'本線ライブ。今ロンドンで流れている音。'},
+    {title:'NTS 2', subtitle:'Live · Channel 2', url:'https://www.nts.live/', stream:'https://stream-relay-geo.ntslive.net/stream2?client=direct', note:'もう一本のライブチャンネル。'},
+    {title:'Slow Focus', subtitle:'Ambient · Drone · Ragas', url:'https://www.nts.live/infinite-mixtapes/slow-focus', stream:'https://stream-mixtape-geo.ntslive.net/mixtape?client=direct', note:'アンビエントとドローンの無限ミックス。'},
+    {title:'Poolside', subtitle:'Balearic · Soft focus', url:'https://www.nts.live/infinite-mixtapes/poolside', stream:'https://stream-mixtape-geo.ntslive.net/mixtape4?client=direct', note:'やわらかい午後の選曲。'},
+    {title:'4 To The Floor', subtitle:'House pulse', url:'https://www.nts.live/infinite-mixtapes/4-to-the-floor', stream:'https://stream-mixtape-geo.ntslive.net/mixtape5?client=direct', note:'ハウスの脈動。'},
+    {title:'The Tube', subtitle:'Archive digs', url:'https://www.nts.live/infinite-mixtapes/the-tube', stream:'https://stream-mixtape-geo.ntslive.net/mixtape26?client=direct', note:'アーカイブ掘り出し系。'},
+    {title:'Field Recordings', subtitle:'環境音', url:'https://www.nts.live/infinite-mixtapes/field-recordings', stream:'https://stream-mixtape-geo.ntslive.net/mixtape23?client=direct', note:'世界各地のフィールドレコーディング。'},
+    {title:'The Jazz Collection', subtitle:'Free · Spiritual · Modal', url:'https://www.nts.live/radio/collections/the-jazz-collection', stream:null, note:'ジャズ特集アーカイブ（NTSサイトで聴く）。'}
   ];
-  const pick=()=>stock[Math.floor(Math.random()*stock.length)];
-  const paint=()=>{
-    const c=pick();
-    app.innerHTML='<div class="eyebrow">NTS · ONE AT A TIME</div><h2 style="font-size:clamp(28px,5vw,42px);margin:8px 0 18px">NTS RADIO</h2><p class="playlist-copy">ストックから毎回ひとつだけおすすめ。リロードやシャッフルで入れ替わります。</p><article class="radio-hero" id="radio-card"><div class="kicker">TODAY\'S PICK</div><h2>'+esc(c.title)+'</h2><div class="subtitle">'+esc(c.subtitle)+'</div><p class="playlist-copy">'+esc(c.note)+'</p><div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center"><a class="playlist-link" href="'+esc(c.url)+'" target="_blank" rel="noopener">↗ NTSで開く</a><button type="button" class="radio-shuffle" id="radio-shuffle">別のおすすめ</button></div></article>';
-    const btn=document.getElementById('radio-shuffle');
-    if(btn)btn.addEventListener('click',()=>{
-      const card=document.getElementById('radio-card');
-      if(card){card.style.opacity='0';card.style.transform='scale(.96)';}
-      setTimeout(paint,180);
+  let current=stock[Math.floor(Math.random()*stock.length)];
+  let audio=null;
+  const stopAudio=()=>{if(audio){try{audio.pause();audio.removeAttribute('src');audio.load();}catch(e){}audio=null;};};
+  const svgRadio=(playing)=>'<div class="radio-svg-wrap'+(playing?' is-playing':'')+'" id="radio-svg" role="button" tabindex="0" aria-label="再生/停止">\n<svg viewBox="0 0 320 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">\n  <defs>\n    <linearGradient id="rb" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#2a3340"/><stop offset="100%" stop-color="#151a22"/></linearGradient>\n    <linearGradient id="gl" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#d7b77a"/><stop offset="100%" stop-color="#8dc9c8"/></linearGradient>\n    <filter id="soft"><feGaussianBlur stdDeviation="1.2"/></filter>\n  </defs>\n  <rect x="24" y="36" width="272" height="152" rx="22" fill="url(#rb)" stroke="#4a5568" stroke-width="2"/>\n  <rect x="40" y="52" width="140" height="72" rx="10" fill="#0d1118" stroke="#3a4555"/>\n  <g class="eq" transform="translate(58 108)">\n    <rect class="eq-bar" x="0" y="-28" width="8" height="28" rx="2" fill="#8dc9c8"/>\n    <rect class="eq-bar" x="16" y="-40" width="8" height="40" rx="2" fill="#d7b77a"/>\n    <rect class="eq-bar" x="32" y="-22" width="8" height="22" rx="2" fill="#8dc9c8"/>\n    <rect class="eq-bar" x="48" y="-36" width="8" height="36" rx="2" fill="#d7b77a"/>\n    <rect class="eq-bar" x="64" y="-26" width="8" height="26" rx="2" fill="#8dc9c8"/>\n  </g>\n  <text x="110" y="72" text-anchor="middle" fill="#8dc9c8" font-family="Arial" font-size="11" letter-spacing="2">NTS</text>\n  <circle class="dial" cx="230" cy="88" r="34" fill="#1a2030" stroke="#d7b77a" stroke-width="3"/>\n  <circle cx="230" cy="88" r="8" fill="#d7b77a"/>\n  <line class="dial" x1="230" y1="88" x2="230" y2="60" stroke="#8dc9c8" stroke-width="3" stroke-linecap="round"/>\n  <circle cx="70" cy="155" r="14" fill="#242c38" stroke="#66717f" stroke-width="2"/>\n  <circle cx="110" cy="155" r="14" fill="#242c38" stroke="#66717f" stroke-width="2"/>\n  <rect x="150" y="145" width="110" height="20" rx="10" fill="#0d1118" stroke="#3a4555"/>\n  <text id="radio-freq" x="205" y="159" text-anchor="middle" fill="#a9adba" font-family="Arial" font-size="10">'+esc(current.title).slice(0,18)+'</text>\n  <path d="M48 36 Q48 18 70 18 L250 18 Q272 18 272 36" fill="none" stroke="#4a5568" stroke-width="4" stroke-linecap="round"/>\n  <circle cx="160" cy="18" r="6" fill="#8dc9c8" filter="url(#soft)"/>\n</svg></div>';
+
+  const paint=(playing=false)=>{
+    const canPlay=!!current.stream;
+    app.innerHTML='<div class="eyebrow">NTS · LISTEN HERE</div><h2 style="font-size:clamp(28px,5vw,42px);margin:8px 0 12px">NTS RADIO</h2><p class="playlist-copy">毎回ひとつ。ラジオ本体をタップするか PLAY でその場で再生。</p><div class="radio-stage">'+svgRadio(playing)+'<div class="radio-status '+(playing?'live':'')+'" id="radio-status">'+(playing?'● LIVE — 再生中':(canPlay?'タップで再生':'この枠はサイトで聴く'))+'</div><div class="radio-controls"><button type="button" class="play-btn'+(playing?' is-on':'')+'" id="radio-play">'+(playing?'■ STOP':'▶ PLAY')+'</button><button type="button" id="radio-next">別のおすすめ</button><a href="'+esc(current.url)+'" target="_blank" rel="noopener">↗ NTSで開く</a></div><article class="radio-meta-card"><div class="kicker">NOW PICKED</div><h2>'+esc(current.title)+'</h2><div class="subtitle">'+esc(current.subtitle)+'</div><p class="playlist-copy">'+esc(current.note)+'</p></article></div>';
+
+    const setPlaying=(on)=>{
+      const wrap=document.getElementById('radio-svg');
+      const st=document.getElementById('radio-status');
+      const btn=document.getElementById('radio-play');
+      if(wrap)wrap.classList.toggle('is-playing',on);
+      if(st){st.className='radio-status'+(on?' live':'');st.textContent=on?'● LIVE — 再生中':(current.stream?'タップで再生':'この枠はサイトで聴く');}
+      if(btn){btn.classList.toggle('is-on',on);btn.textContent=on?'■ STOP':'▶ PLAY';}
+    };
+
+    const toggle=()=>{
+      if(!current.stream){window.open(current.url,'_blank','noopener');return;}
+      if(audio && !audio.paused){stopAudio();setPlaying(false);return;}
+      stopAudio();
+      audio=new Audio(current.stream);
+      audio.crossOrigin='anonymous';
+      audio.play().then(()=>setPlaying(true)).catch(()=>{
+        const st=document.getElementById('radio-status');
+        if(st){st.className='radio-status error';st.textContent='再生に失敗 — NTSで開くを試してください';}
+        setPlaying(false);
+      });
+      audio.addEventListener('error',()=>{
+        const st=document.getElementById('radio-status');
+        if(st){st.className='radio-status error';st.textContent='ストリーム接続エラー';}
+        setPlaying(false);
+      });
+    };
+
+    const bind=(id,fn)=>{const el=document.getElementById(id);if(el)el.addEventListener('click',fn);};
+    bind('radio-play',toggle);
+    bind('radio-svg',toggle);
+    const svg=document.getElementById('radio-svg');
+    if(svg)svg.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle();}});
+    bind('radio-next',()=>{
+      stopAudio();
+      let next=current;
+      for(let i=0;i<8 && next===current;i++) next=stock[Math.floor(Math.random()*stock.length)];
+      current=next;
+      paint(false);
     });
   };
-  paint();
+  paint(false);
  };
  const render=()=>{
   const r=route();

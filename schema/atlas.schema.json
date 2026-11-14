@@ -1,0 +1,374 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bonsai.github.io/jazz-men/schema/atlas.schema.json",
+  "title": "Music Atlas JSON/JSONL data contract",
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "strings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "urls": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri",
+        "pattern": "^https?://"
+      }
+    },
+    "year": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 9999
+    },
+    "nullableYear": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/year"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "base": {
+      "type": "object",
+      "required": [
+        "schema_version"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": "1.0.0"
+        }
+      }
+    },
+    "place": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "kind",
+        "precision"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name_ja": {
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "country",
+            "region",
+            "city",
+            "scene",
+            "venue"
+          ]
+        },
+        "country_code": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[A-Z]{2}$"
+        },
+        "latitude": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": -90,
+          "maximum": 90
+        },
+        "longitude": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": -180,
+          "maximum": 180
+        },
+        "precision": {
+          "enum": [
+            "exact",
+            "approximate",
+            "unknown"
+          ]
+        },
+        "description": {
+          "type": "string"
+        },
+        "sources": {
+          "$ref": "#/$defs/urls"
+        }
+      },
+      "additionalProperties": false
+    },
+    "era": {
+      "type": "object",
+      "required": [
+        "id",
+        "label",
+        "start_year",
+        "end_year",
+        "description"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "label": {
+          "type": "string"
+        },
+        "start_year": {
+          "$ref": "#/$defs/year"
+        },
+        "end_year": {
+          "$ref": "#/$defs/year"
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "concept": {
+      "type": "object",
+      "required": [
+        "id",
+        "label",
+        "category",
+        "definition"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label_ja": {
+          "type": "string"
+        },
+        "category": {
+          "enum": [
+            "genre",
+            "practice",
+            "technique",
+            "philosophy",
+            "scene",
+            "sound"
+          ]
+        },
+        "definition": {
+          "type": "string",
+          "minLength": 1
+        },
+        "aliases": {
+          "$ref": "#/$defs/strings"
+        },
+        "sources": {
+          "$ref": "#/$defs/urls"
+        }
+      },
+      "additionalProperties": false
+    },
+    "work": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "artist_ids"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "artist_ids": {
+          "$ref": "#/$defs/strings"
+        },
+        "release_year": {
+          "$ref": "#/$defs/nullableYear"
+        },
+        "recording_year": {
+          "$ref": "#/$defs/nullableYear"
+        },
+        "place_ids": {
+          "$ref": "#/$defs/strings"
+        },
+        "concept_ids": {
+          "$ref": "#/$defs/strings"
+        },
+        "source_urls": {
+          "$ref": "#/$defs/urls"
+        }
+      },
+      "additionalProperties": false
+    },
+    "relation": {
+      "type": "object",
+      "required": [
+        "source",
+        "relation",
+        "target",
+        "evidence"
+      ],
+      "properties": {
+        "source": {
+          "type": "string",
+          "pattern": "^(artist|work|place|concept|era):[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "relation": {
+          "enum": [
+            "associated_with",
+            "influenced_by",
+            "member_of",
+            "performed_in",
+            "based_in",
+            "born_in",
+            "recorded_in",
+            "released_in_era",
+            "uses_technique",
+            "explores_concept"
+          ]
+        },
+        "target": {
+          "type": "string",
+          "pattern": "^(artist|work|place|concept|era):[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "evidence": {
+          "enum": [
+            "source",
+            "editorial"
+          ]
+        },
+        "source_urls": {
+          "$ref": "#/$defs/urls"
+        }
+      },
+      "additionalProperties": false
+    },
+    "placesFile": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/base"
+        },
+        {
+          "type": "object",
+          "required": [
+            "places"
+          ],
+          "properties": {
+            "places": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/place"
+              }
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "erasFile": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/base"
+        },
+        {
+          "type": "object",
+          "required": [
+            "eras"
+          ],
+          "properties": {
+            "eras": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/era"
+              }
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "conceptsFile": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/base"
+        },
+        {
+          "type": "object",
+          "required": [
+            "concepts"
+          ],
+          "properties": {
+            "concepts": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/concept"
+              }
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "worksFile": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/base"
+        },
+        {
+          "type": "object",
+          "required": [
+            "works"
+          ],
+          "properties": {
+            "works": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/work"
+              }
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "type": "object",
+  "properties": {
+    "places": {
+      "$ref": "#/$defs/placesFile"
+    },
+    "eras": {
+      "$ref": "#/$defs/erasFile"
+    },
+    "concepts": {
+      "$ref": "#/$defs/conceptsFile"
+    },
+    "works": {
+      "$ref": "#/$defs/worksFile"
+    },
+    "relation": {
+      "$ref": "#/$defs/relation"
+    }
+  },
+  "additionalProperties": false
+}

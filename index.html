@@ -39,7 +39,7 @@ input[type=search]:focus{border-color:var(--cyan)}.count{color:var(--muted);font
  const instr=a=>Array.isArray(a.instrument)?a.instrument.join(' / '):(a.instrument||'');
  const all=()=>[...state.world.map(a=>({...a,region:'WORLD',regionLabel:'海外編'})),...state.japan.map(a=>({...a,region:'JAPAN',regionLabel:'日本編'}))];
  const route=()=>{const p=location.hash.replace(/^#\/?/,'').split('/');return{page:p[0]||'all',id:p[1]||''};};
- const active=page=>navLinks.forEach(a=>{if(a.dataset.route===page||(page==='artist'&&['all','world','japan'].includes(a.dataset.route)))a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
+ const active=page=>navLinks.forEach(a=>{if(a.dataset.route===page)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
  const renderList=page=>{
   const artists=page==='world'?all().filter(a=>a.region==='WORLD'):page==='japan'?all().filter(a=>a.region==='JAPAN'):all();
   const filtered=artists.filter(a=>!state.query||[a.name,a.name_en,instr(a),a.profile].join(' ').toLowerCase().includes(state.query.toLowerCase()));

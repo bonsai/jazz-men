@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0.0",
+  "eras": [
+    {
+      "id": "1940s",
+      "label": "1940年代",
+      "start_year": 1940,
+      "end_year": 1949,
+      "description": ""
+    },
+    {
+      "id": "1950s",
+      "label": "1950年代",
+      "start_year": 1950,
+      "end_year": 1959,
+      "description": ""
+    },
+    {
+      "id": "1960s",
+      "label": "1960年代",
+      "start_year": 1960,
+      "end_year": 1969,
+      "description": ""
+    },
+    {
+      "id": "1970s",
+      "label": "1970年代",
+      "start_year": 1970,
+      "end_year": 1979,
+      "description": ""
+    },
+    {
+      "id": "1980s",
+      "label": "1980年代",
+      "start_year": 1980,
+      "end_year": 1989,
+      "description": ""
+    },
+    {
+      "id": "1990s",
+      "label": "1990年代",
+      "start_year": 1990,
+      "end_year": 1999,
+      "description": ""
+    },
+    {
+      "id": "2000s",
+      "label": "2000年代",
+      "start_year": 2000,
+      "end_year": 2009,
+      "description": ""
+    },
+    {
+      "id": "2010s",
+      "label": "2010年代",
+      "start_year": 2010,
+      "end_year": 2019,
+      "description": ""
+    },
+    {
+      "id": "2020s",
+      "label": "2020年代",
+      "start_year": 2020,
+      "end_year": 2029,
+      "description": ""
+    }
+  ]
+}

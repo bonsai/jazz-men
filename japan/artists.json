@@ -333,21 +333,23 @@
       "youtube_search_url": "https://www.youtube.com/results?search_query=Junji%20Hirose%20saxophone%20free%20improvisation"
     },
     {
-      "id": "yasuhiro-yoshigaki",
-      "name": "芳垣安洋",
-      "name_en": "Yasuhiro Yoshigaki",
+      "id": "ayako-kanisasare",
+      "name": "カニササレアヤコ",
+      "name_en": "Ayako Kanisasare",
       "instrument": [
-        "ドラム",
-        "パーカッション"
+        "笙",
+        "アルトサックス",
+        "ピアノ",
+        "ヴァイオリン",
+        "琵琶"
       ],
-      "profile": "ジャズ、即興、ロック、民族音楽を横断するドラマー。ROVO、大友良英のプロジェクト、Orquesta Libreなどで、緻密なアンサンブルと爆発的なグルーヴを両立させる。大編成の音楽を自在に動かす現代日本の重要なリズム奏者。",
+      "profile": "雅楽演奏家・お笑い芸人・ロボットエンジニア。笙の持つ複数音の響きを軸に、古典雅楽だけでなく現代音楽や即興演奏にも取り組む。アルトサックスやピアノ、ヴァイオリンなどの経験も持ち、伝統楽器の音響を現代の耳へひらく異色の表現者。ジャズの枠を越え、日本の実験音楽・即興の広がりを感じさせる存在。",
       "albums": [
-        "ONJQ+ (大友良英 New Jazz Quintet関連)",
-        "LIVE at Shinjuku Pit Inn (Orquesta Libre関連)",
-        "ROVOの作品群"
+        "阿 A (2025)",
+        "吽 UN (2025)"
       ],
-      "youtube_search": "Yasuhiro Yoshigaki drums ROVO live",
-      "youtube_search_url": "https://www.youtube.com/results?search_query=Yasuhiro%20Yoshigaki%20drums%20ROVO%20live"
+      "youtube_search": "Ayako Kanisasare sho improvisation",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Ayako%20Kanisasare%20sho%20improvisation"
     }
   ]
 }

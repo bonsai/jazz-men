@@ -70,7 +70,7 @@ input[type=search]:focus{border-color:var(--cyan)}.count{color:var(--muted);font
  };
  const renderPlaylists=()=>{
   if(!state.playlists.length){app.innerHTML='<div class="empty">プレイリストはまだ登録されていません。</div>';return;}
-  app.innerHTML='<div class="playlist-grid">'+state.playlists.map(p=>'<article class="playlist-card"><div class="kicker">'+esc((p.tags&&p.tags[0])||p.platform||'MUSIC')+' · '+esc(p.platform||'SELECTION')+'</div><h2>'+esc(p.title)+'</h2><div class="subtitle">'+esc(p.subtitle||'')+'</div><p class="playlist-copy">'+esc(p.description||'')+'</p><iframe class="spotify-frame" src="'+esc(p.embed_url)+'" title="'+esc(p.title)+' — Spotify playlist" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin"></iframe><a class="playlist-link" href="'+esc(p.spotify_url)+'" target="_blank" rel="noopener">↗ Spotifyでプレイリストを開く</a></article>').join('');
+  app.innerHTML='<div class="playlist-grid">'+state.playlists.map(p=>'<article class="playlist-card"><div class="kicker">'+esc((p.tags&&p.tags[0])||p.platform||'MUSIC')+' · '+esc(p.platform||'SELECTION')+'</div><h2>'+esc(p.title)+'</h2><div class="subtitle">'+esc(p.subtitle||'')+'</div><p class="playlist-copy">'+esc(p.description||'')+'</p><iframe class="spotify-frame" src="'+esc(p.embed_url)+'" title="'+esc(p.title)+' — Spotify playlist" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin"></iframe><a class="playlist-link" href="'+esc(p.spotify_url)+'" target="_blank" rel="noopener">↗ Spotifyでプレイリストを開く</a></article>').join('')+'</div>';
  };
  const render=()=>{
   const r=route();active(r.page);

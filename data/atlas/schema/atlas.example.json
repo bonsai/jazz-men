@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0.0",
+  "artists": [
+    {
+      "id": "ornette-coleman",
+      "catalogue": "world"
+    }
+  ],
+  "places": [],
+  "eras": [
+    {
+      "id": "1950s",
+      "label": "1950年代",
+      "start_year": 1950,
+      "end_year": 1959,
+      "description": ""
+    }
+  ],
+  "concepts": [],
+  "works": [
+    {
+      "id": "shape-of-jazz-to-come",
+      "title": "The Shape of Jazz to Come",
+      "artist_ids": [
+        "ornette-coleman"
+      ],
+      "release_year": 1959,
+      "recording_year": null,
+      "place_ids": [],
+      "concept_ids": [],
+      "source_urls": []
+    }
+  ],
+  "relations": [
+    {
+      "source": "artist:ornette-coleman",
+      "relation": "associated_with",
+      "target": "work:shape-of-jazz-to-come",
+      "evidence": "editorial",
+      "source_urls": []
+    }
+  ]
+}

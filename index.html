@@ -3,4 +3,123 @@
 <meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="/jazz-men/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="フリージャズ、即興、実験音楽を切り拓いた世界と日本の音楽家を紹介するインタラクティブ・アーカイブ。">
 <meta name="theme-color" content="#111319"><title>THE SOUND LIBERATORS — 音楽の自由を聴く</title>
-</head><body><p>Loading full restore...</p></body></html>
+<style>
+:root{color-scheme:dark;--bg:#111319;--panel:#1b202a;--ink:#f1eee7;--muted:#a9adba;--line:#343a48;--gold:#d7b77a;--cyan:#8dc9c8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 82% 0%,#293342 0,#111319 42rem);color:var(--ink);font-family:Georgia,"Yu Mincho","Hiragino Mincho ProN",serif;line-height:1.75}
+a{color:inherit;text-decoration-color:#657080;text-underline-offset:4px}a:hover{color:var(--cyan)}
+header{max-width:1160px;margin:auto;padding:62px 28px 36px}.kicker,.eyebrow{font:11px Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+h1{font-size:clamp(40px,8vw,82px);line-height:.98;letter-spacing:-.05em;margin:18px 0}.subtitle{font-size:clamp(16px,2vw,20px);color:var(--muted)}.intro{max-width:760px;color:#d5d2cb;margin:22px 0 0}
+nav{max-width:1160px;margin:0 auto;padding:0 28px 18px;display:flex;gap:8px;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+nav a,.back-link{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:9px 15px;border:1px solid var(--line);border-radius:999px;text-decoration:none;color:var(--muted);font:13px Arial,sans-serif;transition:.2s}
+nav a:hover,nav a[aria-current=page],.back-link:hover{border-color:var(--gold);color:var(--ink);background:#282a30}
+main{max-width:1160px;margin:auto;padding:28px 28px 76px}.toolbar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:24px}
+input[type=search]{flex:1;min-width:min(100%,280px);background:#202632;color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:12px 18px;font-size:14px;outline:none}
+input[type=search]:focus{border-color:var(--cyan)}.count{color:var(--muted);font:12px Arial,sans-serif;white-space:nowrap}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.artist-card{background:linear-gradient(145deg,#1c222d,#171b23);border:1px solid var(--line);border-radius:14px;padding:20px;min-width:0;transition:transform .18s,border-color .18s}.artist-card:hover{transform:translateY(-2px);border-color:#66717f}
+.artist-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.artist-number{font:22px Arial,sans-serif;color:var(--gold)}.artist-card h2{font-size:clamp(20px,2.5vw,27px);line-height:1.25;margin:7px 0 2px}.artist-card h2 span{display:block;font:12px Arial,sans-serif;color:var(--muted);margin-top:5px}.instrument{font:12px/1.6 Arial,sans-serif;color:var(--cyan);margin:10px 0 12px}.excerpt{font-size:14px;line-height:1.9;color:#d5d2cb;margin:0 0 14px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.card-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;border-top:1px solid var(--line);padding-top:12px}.album-count{font:11px Arial,sans-serif;color:var(--muted)}.detail-link{display:inline-flex;align-items:center;min-height:44px;padding:8px 10px;font:12px Arial,sans-serif;color:var(--gold);text-decoration:none}
+.detail{max-width:850px;margin:auto}.detail h2{font-size:clamp(30px,5vw,48px);line-height:1.2;margin:14px 0 4px}.detail .english{font:14px Arial,sans-serif;color:var(--muted)}.detail .profile{font-size:17px;line-height:2.1;color:#e3e0d9;margin:26px 0}.detail-panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px;margin:18px 0}.detail-panel h3{font:11px Arial,sans-serif;color:var(--gold);letter-spacing:.16em;margin:0 0 12px}.albums{margin:0;padding-left:22px}.albums li{padding:4px 0}.yt-link{display:inline-block;margin-top:10px;color:var(--cyan);font:13px Arial,sans-serif}
+.playlist-card{background:linear-gradient(145deg,#1c222d,#171b23);border:1px solid var(--line);border-radius:16px;padding:clamp(18px,4vw,30px);margin-bottom:18px}.playlist-card h2{font-size:clamp(27px,5vw,42px);margin:8px 0}.playlist-copy{max-width:760px;color:#d5d2cb}.playlist-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.video-card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;min-width:0}.video-thumb{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:10px;background:#10151d;margin:12px 0 10px}.video-thumb-placeholder{display:flex;align-items:center;justify-content:center;text-align:center;width:100%;aspect-ratio:16/9;border-radius:10px;margin:12px 0 10px;padding:20px;background:radial-gradient(ellipse at 75% 20%,#48515f 0,#242c38 40%,#10151d 100%);border:1px solid #414a58;color:#f1eee7;overflow:hidden}.video-thumb-placeholder strong{display:block;font-size:clamp(18px,3vw,28px);line-height:1.25}.video-thumb-placeholder span{display:block;margin-top:8px;color:#d7b77a;font:10px Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase}.video-card[hidden]{display:none}.survey-section{margin-top:34px;padding-top:22px;border-top:1px solid var(--line)}.survey-section h3{font:12px Arial,sans-serif;letter-spacing:.18em;color:var(--gold)}.survey-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.survey-item{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:#171c25;font:13px/1.5 Arial,sans-serif}.survey-item a{color:var(--cyan);white-space:nowrap}.survey-count{color:var(--muted);font:12px Arial,sans-serif}@media(max-width:700px){.survey-list{grid-template-columns:1fr}}.video-card h2{font-size:22px;line-height:1.3;margin:8px 0}.video-meta{font:12px Arial,sans-serif;color:var(--muted)}.video-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}.video-actions a{display:inline-flex;align-items:center;min-height:44px;padding:8px 12px;border:1px solid var(--line);border-radius:999px;color:var(--cyan);font:12px Arial,sans-serif;text-decoration:none}.video-frame{width:100%;aspect-ratio:16/9;border:0;border-radius:10px;margin-top:12px}.spotify-frame{display:block;width:100%;height:380px;border:0;border-radius:12px;margin-top:18px}.playlist-link{display:inline-block;margin-top:14px;color:var(--cyan);font:13px Arial,sans-serif}
+.empty,.load-error{padding:24px;border:1px solid var(--line);border-radius:12px;background:#171c25;color:var(--muted)}.load-error{border-color:#7a3b3b;color:#f0c4c4}.sources{max-width:1160px;margin:0 auto 48px;padding:0 28px;color:var(--muted);font:13px Arial,sans-serif}.sources a{color:var(--cyan)}
+@media(min-width:701px) and (max-width:1024px){header{padding:42px 24px 28px}main{padding-top:22px}.playlist-card{padding:20px}}@media(max-width:700px){header{padding:46px 20px 28px}nav{padding-left:20px;padding-right:20px}main,.sources{padding-left:20px;padding-right:20px}.grid,.playlist-grid{grid-template-columns:1fr}.artist-card{padding:18px}.spotify-frame{height:352px}}
+</style>
+</head><body>
+<header>
+<div class="kicker">A FIELD GUIDE TO MUSICAL FREEDOM</div>
+<h1>THE SOUND<br>LIBERATORS</h1>
+<div class="subtitle">音楽のOSを書き換えた表現者たち</div>
+<p class="intro">ジャズの約束をほどき、音の境界を越え、まだ名前のない響きを探した音楽家たち。海外編と日本編を横断し、人物・名盤・演奏への入口をひとつの場所に集めたリスニング・アーカイブ。</p>
+</header>
+<nav aria-label="メインナビゲーション"><a href="#/all" data-route="all">ALL ARTISTS</a><a href="#/world" data-route="world">WORLD</a><a href="#/japan" data-route="japan">JAPAN</a><a href="#/playlists" data-route="playlists">PLAYLISTS</a><a href="#/radio" data-route="radio">NTS RADIO</a><a href="#/videos" data-route="videos">VIDEO</a><a href="#/videos2" data-route="videos2">VIDEO 2</a><a href="#/videos3" data-route="videos3">VIDEO 3</a></nav>
+<main id="app"><p class="empty">音楽家のデータを読み込んでいます…</p></main>
+<section class="sources"><strong>参考・探索先</strong><br><a href="https://www.allmusic.com/style/free-jazz-ma0000002598/albums" target="_blank" rel="noopener">AllMusic — Free Jazz Album Highlights</a> ／ <a href="https://www.acclaimedmusic.net/genre/genre1266.htm" target="_blank" rel="noopener">Acclaimed Music — Free Jazz Albums</a><br>名盤は代表作の入口として選定。YouTubeは検索リンク形式です。</section>
+<script>
+(()=>{
+ const esc=s=>String(s??'').replace(/&/g,'&').replace(/</g,'<').replace(/>/g,'>').replace(/"/g,'"');
+ const app=document.getElementById('app'), navLinks=[...document.querySelectorAll('[data-route]')];
+ const state={world:[],japan:[],playlists:[],videos:[],videos2:[],tracks:[],youtubeSeeds:[],youtubeSeedsData:null,query:''};
+ const route=()=>{const h=(location.hash||'#/all').slice(2)||'all';const [page,...rest]=h.split('/');return{page,id:rest.join('/')};};
+ const active=page=>navLinks.forEach(a=>{if(a.dataset.route===page)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
+ const all=()=>[...state.world,...state.japan];
+ const renderList=page=>{
+  const artists=page==='world'?all().filter(a=>a.region==='WORLD'):page==='japan'?all().filter(a=>a.region==='JAPAN'):all();
+  const q=state.query.trim().toLowerCase();
+  const filtered=q?artists.filter(a=>((a.name||'')+' '+(a.name_en||'')+' '+(a.instrument||'')+' '+(a.style||'')).toLowerCase().includes(q)):artists;
+  app.innerHTML='<div class="toolbar"><input id="q" type="search" placeholder="名前・楽器・スタイルで検索" aria-label="検索" value="'+esc(state.query)+'"><span class="count">'+filtered.length+' / '+artists.length+'</span></div><div class="grid">'+filtered.map((a,i)=>'<article class="artist-card"><div class="artist-top"><div class="artist-number">'+String(i+1).padStart(2,'0')+'</div></div><h2>'+esc(a.name)+(a.name_en?'<span>'+esc(a.name_en)+'</span>':'')+'</h2><div class="instrument">'+esc(a.instrument||'')+(a.style?' · '+esc(a.style):'')+'</div><p class="excerpt">'+esc(a.excerpt||a.profile||'')+'</p><div class="card-foot"><span class="album-count">'+(a.albums?a.albums.length:0)+' albums</span><a class="detail-link" href="#/artist/'+encodeURIComponent(a.id||a.name)+'">詳細 →</a></div></article>').join('')+'</div>';
+  const input=document.getElementById('q');
+  input.addEventListener('input',()=>{state.query=input.value;renderList(page);});
+ };
+ const renderDetail=id=>{
+  const a=all().find(x=>(x.id||x.name)===id);
+  if(!a){app.innerHTML='<p class="empty">見つかりませんでした。<a class="back-link" href="#/all">← 一覧へ</a></p>';return;}
+  app.innerHTML='<a class="back-link" href="#/all">← ALL ARTISTS</a><div class="detail"><div class="eyebrow">'+(a.region||'')+'</div><h2>'+esc(a.name)+'</h2>'+(a.name_en?'<div class="english">'+esc(a.name_en)+'</div>':'')+'<div class="instrument">'+esc(a.instrument||'')+(a.style?' · '+esc(a.style):'')+'</div><p class="profile">'+esc(a.profile||a.excerpt||'')+'</p><div class="detail-panel"><h3>KEY ALBUMS</h3><ul class="albums">'+(a.albums||[]).map(al=>'<li>'+esc(al)+'</li>').join('')+'</ul></div>'+(a.youtube_search?'<a class="yt-link" href="'+esc(a.youtube_search)+'" target="_blank" rel="noopener">YouTubeで探す ↗</a>':'')+'</div>';
+ };
+ const getVideoId=url=>{if(!url)return null;const m=String(url).match(/(?:youtu\.be\/|v=|embed\/)([\w-]{11})/);return m?m[1]:null;};
+ const renderVideos=()=>{
+  const items=state.videos||[];
+  const videoItems=items.filter(v=>getVideoId(v.video_url)&&v.thumbnail_status!=='unavailable_checked_2026-11-14');
+  app.innerHTML='<div class="eyebrow">VIDEO ARCHIVE</div><h2 style="font-size:clamp(28px,5vw,42px);margin:8px 0 18px">VIDEO</h2><p class="playlist-copy">確認済み／サムネイル付きの演奏映像。</p><div class="count">'+videoItems.length+' videos</div><div class="playlist-grid">'+videoItems.map((v,i)=>{const videoId=getVideoId(v.video_url);return '<article class="video-card" data-video-card="'+i+'"><div class="eyebrow">VIDEO ARCHIVE</div><a href="'+esc(v.video_url)+'" target="_blank" rel="noopener" aria-label="'+esc(v.artist+' — '+v.work)+'をYouTubeで再生"><img class="video-thumb" src="https://i.ytimg.com/vi/'+encodeURIComponent(videoId)+'/hqdefault.jpg" alt="'+esc(v.artist+' — '+v.work)+'" loading="lazy" referrerpolicy="no-referrer"></a><h2>'+esc(v.work)+'</h2><div class="video-meta">'+esc(v.artist)+'</div><div class="video-actions"><a href="'+esc(v.video_url)+'" target="_blank" rel="noopener">▶ YouTube ↗</a></div></article>';}).join('')+'</div>';
+ };
+ const renderVideo2=()=>{
+  const items=state.videos2||[];
+  const itemHtml=(v)=>'<article class="survey-item"><div><strong>'+esc(v.artist)+'</strong><br>'+esc(v.work)+(v.year?' · '+esc(v.year):'')+'<div class="video-meta">'+(v.research_status==='video_found_thumbnail_pending'?'VIDEO FOUND · サムネイル確認待ち':v.research_status==='replacement_required'?'既存URLのサムネイル取得失敗 · 代替調査中':v.research_status==='thumbnail_failed_runtime'?'サムネイル未取得 · VIDEO 2へ移動':'URL未特定 · 調査候補')+'</div>'+(v.note?'<p class="video-meta">'+esc(v.note)+'</p>':'')+'</div><div class="video-actions">'+(v.video_url?'<a href="'+esc(v.video_url)+'" target="_blank" rel="noopener">▶ 動画を確認 ↗</a>':'')+'<a href="'+esc(v.youtube_search_url)+'" target="_blank" rel="noopener">YouTube検索 ↗</a>'+(v.source_url&&v.source_url!==v.video_url?'<a href="'+esc(v.source_url)+'" target="_blank" rel="noopener">参考資料 ↗</a>':'')+'</div></article>';
+  app.innerHTML='<div class="eyebrow">RESEARCH SHELF · VIDEO II</div><h2 style="font-size:clamp(28px,5vw,42px);margin:8px 0 18px">VIDEO 2 — SURVEY QUEUE</h2><p class="playlist-copy">動画URL未特定、サムネイル未確認、または代替動画の調査が必要な作品を保管。重複を統合し、検索結果と参考資料を分けて記録します。</p><div class="toolbar"><input id="video2-search" type="search" placeholder="演奏者・作品名で検索" aria-label="VIDEO 2候補を検索"><span class="count" id="video2-count">'+items.length+'件 · 重複統合済み</span></div><div class="survey-list" id="video2-list">'+items.map(itemHtml).join('')+'</div>';
+  const input=document.getElementById('video2-search'),list=document.getElementById('video2-list'),count=document.getElementById('video2-count');
+  input.addEventListener('input',()=>{const q=input.value.trim().toLowerCase();let n=0;[...list.children].forEach((el,i)=>{const v=items[i];const show=!q||(v.artist+' '+v.work+' '+(v.note||'')).toLowerCase().includes(q);el.hidden=!show;if(show)n++;});count.textContent=n+' / '+items.length+'件';});
+ };
+ const renderPlaylists=()=>{
+  const onlySpotify=(state.playlists||[]).filter(p=>(p.platform||'').toLowerCase()==='spotify');
+  const spotify=onlySpotify.map(p=>'<article class="playlist-card"><div class="kicker">'+esc((p.tags&&p.tags[0])||p.platform||'MUSIC')+' · '+esc(p.platform||'SELECTION')+'</div><h2>'+esc(p.title)+'</h2><div class="subtitle">'+esc(p.subtitle||'')+'</div><p class="playlist-copy">'+esc(p.description||'')+'</p><iframe class="spotify-frame" src="'+esc(p.embed_url)+'" title="'+esc(p.title)+' — Spotify playlist" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin"></iframe><a class="playlist-link" href="'+esc(p.spotify_url)+'" target="_blank" rel="noopener">↗ Spotifyでプレイリストを開く</a></article>').join('');
+  app.innerHTML='<h2 style="font-size:clamp(28px,5vw,42px);margin:8px 0 18px">PLAYLISTS</h2><div class="eyebrow">SPOTIFY · PUBLIC PLAYLISTS</div><p class="playlist-copy">Spotify公開プレイリストのみを掲載。YouTube候補リストは VIDEO 3 を参照。</p><div class="playlist-grid">'+(spotify||'<p class="empty">Spotifyプレイリストはまだありません。</p>')+'</div>';
+ };
+ const renderVideo3=()=>{
+  const seeds=state.youtubeSeeds||[];
+  const tracks=state.tracks||[];
+  const trackById=Object.fromEntries(tracks.map(t=>[t.id,t]));
+  const yt=seeds.map(p=>{
+    const items=(p.items||[]).map(v=>{
+      const master=trackById[v.source_video2_id||v.id]||{};
+      const status=v.status||master.research_status||master.verification||'search_required';
+      const video_url=v.video_url||master.video_url;
+      const search=v.youtube_search_url||master.youtube_search_url||'';
+      const label=status==='search_required'?'検索候補':status==='replacement_required'?'代替URL調査待ち':(video_url?'動画URLあり・確認待ち':'候補');
+      return '<div class="survey-item"><span><strong>'+esc(v.artist||master.artist||'')+'</strong><br>'+esc(v.work||master.work||'')+'<div class="video-meta">'+esc(label)+'</div></span><span class="video-actions">'+(video_url?'<a href="'+esc(video_url)+'" target="_blank" rel="noopener">動画 ↗</a>':'')+(search?'<a href="'+esc(search)+'" target="_blank" rel="noopener">検索 ↗</a>':'')+'</span></div>';
+    }).join('');
+    return '<article class="playlist-card"><div class="kicker">YOUTUBE · LIST · '+(p.items?p.items.length:0)+' TRACKS</div><h2>'+esc(p.title)+'</h2><div class="subtitle">'+esc(p.subtitle||'')+'</div><p class="playlist-copy">'+esc(p.description||'')+'</p><div class="survey-list">'+items+'</div><p class="video-meta">tracks.jsonl をマスターとし、VIDEO 2 候補をテーマ編成したYouTubeリスト。公開プレイリストURLは未作成（seed）。</p></article>';
+  }).join('');
+  app.innerHTML='<div class="eyebrow">YOUTUBE · CURATED LISTS</div><h2 style="font-size:clamp(28px,5vw,42px);margin:8px 0 18px">VIDEO 3 — YOUTUBE LISTS</h2><p class="playlist-copy">tracks.jsonl を唯一のマスターデータとして参照し、テーマ別に編成したYouTube候補リストです。確定トラックのみを公開プレイリストに載せます。</p><div class="count">'+seeds.length+' lists · '+seeds.reduce((n,p)=>n+(p.items?p.items.length:0),0)+' placements · tracks master '+(tracks.length)+' · covered '+(state.youtubeSeedsData?.summary?.covered_candidates||0)+'</div><div class="playlist-grid">'+yt+'</div>';
+ };
+ const renderRadio=()=>{app.innerHTML='<div class="eyebrow">NTS</div><h2 style="font-size:clamp(28px,5vw,42px);margin:8px 0 18px">NTS RADIO</h2><p class="playlist-copy">NTS関連のリンクは準備中です。</p>';};
+ const render=()=>{
+  const r=route();
+  active(r.page);
+  if(r.page==='artist')renderDetail(decodeURIComponent(r.id));
+  else if(r.page==='playlists')renderPlaylists();
+  else if(r.page==='radio')renderRadio();
+  else if(r.page==='videos')renderVideos();
+  else if(r.page==='videos2')renderVideo2();
+  else if(r.page==='videos3')renderVideo3();
+  else renderList(['world','japan'].includes(r.page)?r.page:'all');
+  window.scrollTo(0,0);
+ };
+ const loadJson=path=>fetch(path,{signal:AbortSignal.timeout(12000)}).then(r=>{if(!r.ok)throw Error(path+' ('+r.status+')');return r.json()});
+ const loadVideoJsonl=()=>fetch('data/videos.jsonl',{signal:AbortSignal.timeout(12000)}).then(r=>{if(!r.ok)throw Error('data/videos.jsonl ('+r.status+')');return r.text();}).then(t=>({videos:t.split(String.fromCharCode(10)).filter(Boolean).map(line=>JSON.parse(line))}));
+ const loadVideo2Jsonl=()=>fetch('data/videos2.jsonl',{signal:AbortSignal.timeout(12000)}).then(r=>{if(!r.ok)throw Error('data/videos2.jsonl ('+r.status+')');return r.text();}).then(t=>({videos:t.split(String.fromCharCode(10)).filter(Boolean).map(line=>JSON.parse(line))}));
+ const loadYoutubeSeeds=()=>loadJson('data/youtube-playlist-seeds.json');
+ const loadTracksJsonl=()=>fetch('data/tracks.jsonl',{signal:AbortSignal.timeout(12000)}).then(r=>{if(!r.ok)throw Error('data/tracks.jsonl ('+r.status+')');return r.text();}).then(t=>({tracks:t.split(String.fromCharCode(10)).filter(Boolean).map(line=>JSON.parse(line))}));
+  Promise.allSettled([loadJson('data/artists.json'),loadJson('japan/artists.json'),loadJson('data/playlists.json'),loadVideoJsonl(),loadVideo2Jsonl(),loadYoutubeSeeds(),loadTracksJsonl()]).then(results=>{
+  const errors=[];
+  if(results[0].status==='fulfilled')state.world=results[0].value.artists||[];else errors.push(results[0].reason.message);
+  if(results[1].status==='fulfilled')state.japan=results[1].value.artists||[];else errors.push(results[1].reason.message);
+  if(results[2].status==='fulfilled')state.playlists=results[2].value.playlists||[];else errors.push(results[2].reason.message);
+  if(results[3].status==='fulfilled')state.videos=results[3].value.videos||[];else errors.push(results[3].reason.message);
+  if(results[4].status==='fulfilled')state.videos2=results[4].value.videos||[];else errors.push(results[4].reason.message);
+  if(results[5].status==='fulfilled'){state.youtubeSeeds=results[5].value.playlists||[];state.youtubeSeedsData=results[5].value;}else errors.push(results[5].reason.message);
+  if(results[6].status==='fulfilled')state.tracks=results[6].value.tracks||[];else errors.push(results[6].reason.message);
+  render();
+  if(errors.length){app.insertAdjacentHTML('afterbegin','<div class="load-error" role="alert">一部のデータを読み込めませんでした：'+esc(errors.join(' / '))+' <button type="button" id="retry-data">再試行</button></div>');document.getElementById('retry-data').addEventListener('click',()=>location.reload());}
+ });
+ window.addEventListener('hashchange',render);
+ navLinks.forEach(a=>a.addEventListener('click',()=>{state.query='';}));
+})();
+</script></body></html>

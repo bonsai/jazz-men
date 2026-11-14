@@ -271,6 +271,7 @@
         {
           "type": "object",
           "required": [
+            "schema_version",
             "places"
           ],
           "properties": {
@@ -279,6 +280,9 @@
               "items": {
                 "$ref": "#/$defs/place"
               }
+            },
+            "schema_version": {
+              "const": "1.0.0"
             }
           },
           "additionalProperties": false
@@ -293,6 +297,7 @@
         {
           "type": "object",
           "required": [
+            "schema_version",
             "eras"
           ],
           "properties": {
@@ -301,6 +306,9 @@
               "items": {
                 "$ref": "#/$defs/era"
               }
+            },
+            "schema_version": {
+              "const": "1.0.0"
             }
           },
           "additionalProperties": false
@@ -315,6 +323,7 @@
         {
           "type": "object",
           "required": [
+            "schema_version",
             "concepts"
           ],
           "properties": {
@@ -323,6 +332,9 @@
               "items": {
                 "$ref": "#/$defs/concept"
               }
+            },
+            "schema_version": {
+              "const": "1.0.0"
             }
           },
           "additionalProperties": false
@@ -337,6 +349,7 @@
         {
           "type": "object",
           "required": [
+            "schema_version",
             "works"
           ],
           "properties": {
@@ -345,6 +358,9 @@
               "items": {
                 "$ref": "#/$defs/work"
               }
+            },
+            "schema_version": {
+              "const": "1.0.0"
             }
           },
           "additionalProperties": false

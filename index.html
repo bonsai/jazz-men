@@ -27,14 +27,14 @@ input[type=search]:focus{border-color:var(--cyan)}.count{color:var(--muted);font
 </style></head><body>
 <header><div class="kicker">A FIELD GUIDE TO MUSICAL FREEDOM</div><h1>THE SOUND<br>LIBERATORS</h1><div class="subtitle">音楽のOSを書き換えた表現者たち</div>
 <p class="intro">ジャズの約束をほどき、音の境界を越え、まだ名前のない響きを探した音楽家たち。海外編と日本編を横断し、人物・名盤・演奏への入口をひとつの場所に集めたリスニング・アーカイブ。</p></header>
-<nav aria-label="メインナビゲーション"><a href="#/all" data-route="all">ALL ARTISTS</a><a href="#/world" data-route="world">WORLD</a><a href="#/japan" data-route="japan">JAPAN</a><a href="#/playlists" data-route="playlists">PLAYLISTS</a><a href="#/radio" data-route="radio">NTS RADIO</a><a href="#/videos" data-route="videos">VIDEO</a><a href="#/videos2" data-route="videos2">VIDEO 2</a></nav>
+<nav aria-label="メインナビゲーション"><a href="#/all" data-route="all">ALL ARTISTS</a><a href="#/world" data-route="world">WORLD</a><a href="#/japan" data-route="japan">JAPAN</a><a href="#/playlists" data-route="playlists">PLAYLISTS</a><a href="#/radio" data-route="radio">NTS RADIO</a><a href="#/videos" data-route="videos">VIDEO</a><a href="#/videos2" data-route="videos2">VIDEO 2</a><a href="#/playlists" data-route="playlists">PLAYLISTS</a></nav>
 <main id="app" aria-live="polite"><div class="loading" role="status">音楽家のデータを読み込んでいます…</div><div class="skeleton-grid" aria-hidden="true"><div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div></div></main>
 <div class="sources"><b>参考・探索先</b><br><a href="https://www.allmusic.com/style/free-jazz-ma0000002598/albums" target="_blank" rel="noopener">AllMusic — Free Jazz Album Highlights</a> ／ <a href="https://www.acclaimedmusic.net/genre/genre1266.htm" target="_blank" rel="noopener">Acclaimed Music — Free Jazz Albums</a><br>名盤は代表作の入口として選定。YouTubeは検索リンク形式です。</div>
 <footer>THE SOUND LIBERATORS · LISTEN BEYOND THE BOUNDARIES</footer>
 <script>
 (() => {
  const app=document.getElementById('app'), navLinks=[...document.querySelectorAll('[data-route]')];
- const state={world:[],japan:[],playlists:[],videos:[],videos2:[],query:''};
+ const state={world:[],japan:[],playlists:[],videos:[],videos2:[],youtubeSeeds:[],youtubeSeedsData:null,query:''};
  const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const instr=a=>Array.isArray(a.instrument)?a.instrument.join(' / '):(a.instrument||'');
  const all=()=>[...state.world.map(a=>({...a,region:'WORLD',regionLabel:'海外編'})),...state.japan.map(a=>({...a,region:'JAPAN',regionLabel:'日本編'}))];
@@ -94,8 +94,10 @@ input[type=search]:focus{border-color:var(--cyan)}.count{color:var(--muted);font
   input.addEventListener('input',()=>{const q=input.value.trim().toLowerCase();let n=0;[...list.children].forEach((el,i)=>{const v=items[i];const show=!q||(v.artist+' '+v.work+' '+(v.note||'')).toLowerCase().includes(q);el.hidden=!show;if(show)n++;});count.textContent=n+' / '+items.length+'件';});
  };
  const renderPlaylists=()=>{
-  if(!state.playlists.length){app.innerHTML='<div class="empty">プレイリストはまだ登録されていません。</div>';return;}
-  app.innerHTML='<div class="playlist-grid">'+state.playlists.map(p=>'<article class="playlist-card"><div class="kicker">'+esc((p.tags&&p.tags[0])||p.platform||'MUSIC')+' · '+esc(p.platform||'SELECTION')+'</div><h2>'+esc(p.title)+'</h2><div class="subtitle">'+esc(p.subtitle||'')+'</div><p class="playlist-copy">'+esc(p.description||'')+'</p><iframe class="spotify-frame" src="'+esc(p.embed_url)+'" title="'+esc(p.title)+' — Spotify playlist" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin"></iframe><a class="playlist-link" href="'+esc(p.spotify_url)+'" target="_blank" rel="noopener">↗ Spotifyでプレイリストを開く</a></article>').join('')+'</div>';
+  const spotify=state.playlists.map(p=>'<article class="playlist-card"><div class="kicker">'+esc((p.tags&&p.tags[0])||p.platform||'MUSIC')+' · '+esc(p.platform||'SELECTION')+'</div><h2>'+esc(p.title)+'</h2><div class="subtitle">'+esc(p.subtitle||'')+'</div><p class="playlist-copy">'+esc(p.description||'')+'</p><iframe class="spotify-frame" src="'+esc(p.embed_url)+'" title="'+esc(p.title)+' — Spotify playlist" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin"></iframe><a class="playlist-link" href="'+esc(p.spotify_url)+'" target="_blank" rel="noopener">↗ Spotifyでプレイリストを開く</a></article>').join('');
+  const seeds=state.youtubeSeeds||[];
+  const yt=seeds.map(p=>'<article class="playlist-card"><div class="kicker">YOUTUBE · SEED COLLECTION · '+p.items.length+' TRACKS</div><h2>'+esc(p.title)+'</h2><div class="subtitle">'+esc(p.subtitle)+'</div><p class="playlist-copy">'+esc(p.description)+'</p><div class="survey-list">'+p.items.map(v=>'<div class="survey-item"><span><strong>'+esc(v.artist)+'</strong><br>'+esc(v.work)+'<div class="video-meta">'+(v.status==='search_required'?'検索候補':v.status==='replacement_required'?'代替URL調査待ち':'動画URLあり・確認待ち')+'</div></span><span class="video-actions">'+(v.video_url?'<a href="'+esc(v.video_url)+'" target="_blank" rel="noopener">動画 ↗</a>':'')+'<a href="'+esc(v.youtube_search_url)+'" target="_blank" rel="noopener">検索 ↗</a></span></div>').join('')+'</div><p class="video-meta">YouTube上のプレイリストは未作成。候補を確認してから手動で追加するためのSEEDです。</p></article>').join('');
+  app.innerHTML='<h2 style="font-size:clamp(28px,5vw,42px);margin:8px 0 18px">PLAYLISTS</h2><div class="eyebrow">SPOTIFY · PUBLIC PLAYLISTS</div><div class="playlist-grid">'+(spotify||'<p class="empty">Spotifyプレイリストはまだありません。</p>')+'</div><section class="survey-section"><div class="eyebrow">YOUTUBE · CURATION SEEDS</div><h2 style="font-size:clamp(24px,4vw,34px);margin:8px 0">YOUTUBE PLAYLIST SEEDS</h2><p class="playlist-copy">VIDEO 2の調査候補をテーマ別プレイリストに編成しました。URLがある候補も、サムネイル・内容の確認前は確定トラックとして扱いません。</p><div class="count">'+seeds.length+' playlists · '+seeds.reduce((n,p)=>n+p.items.length,0)+' seed placements · '+(state.youtubeSeedsData?.summary?.covered_candidates||0)+' unique candidates covered</div><div class="playlist-grid">'+yt+'</div></section>';
  };
  const render=()=>{
   const r=route();active(r.page);
@@ -111,13 +113,15 @@ input[type=search]:focus{border-color:var(--cyan)}.count{color:var(--muted);font
  const loadJson=path=>fetch(path,{signal:AbortSignal.timeout(12000)}).then(r=>{if(!r.ok)throw Error(path+' ('+r.status+')');return r.json()});
  const loadVideoJsonl=()=>fetch('data/videos.jsonl',{signal:AbortSignal.timeout(12000)}).then(r=>{if(!r.ok)throw Error('data/videos.jsonl ('+r.status+')');return r.text();}).then(t=>({videos:t.split(String.fromCharCode(10)).filter(Boolean).map(line=>JSON.parse(line))}));
  const loadVideo2Jsonl=()=>fetch('data/videos2.jsonl',{signal:AbortSignal.timeout(12000)}).then(r=>{if(!r.ok)throw Error('data/videos2.jsonl ('+r.status+')');return r.text();}).then(t=>({videos:t.split(String.fromCharCode(10)).filter(Boolean).map(line=>JSON.parse(line))}));
-  Promise.allSettled([loadJson('data/artists.json'),loadJson('japan/artists.json'),loadJson('data/playlists.json'),loadVideoJsonl(),loadVideo2Jsonl()]).then(results=>{
+ const loadYoutubeSeeds=()=>loadJson('data/youtube-playlist-seeds.json');
+  Promise.allSettled([loadJson('data/artists.json'),loadJson('japan/artists.json'),loadJson('data/playlists.json'),loadVideoJsonl(),loadVideo2Jsonl(),loadYoutubeSeeds()]).then(results=>{
   const errors=[];
   if(results[0].status==='fulfilled')state.world=results[0].value.artists||[];else errors.push(results[0].reason.message);
   if(results[1].status==='fulfilled')state.japan=results[1].value.artists||[];else errors.push(results[1].reason.message);
   if(results[2].status==='fulfilled')state.playlists=results[2].value.playlists||[];else errors.push(results[2].reason.message);
   if(results[3].status==='fulfilled')state.videos=results[3].value.videos||[];else errors.push(results[3].reason.message);
   if(results[4].status==='fulfilled')state.videos2=results[4].value.videos||[];else errors.push(results[4].reason.message);
+  if(results[5].status==='fulfilled'){state.youtubeSeeds=results[5].value.playlists||[];state.youtubeSeedsData=results[5].value;}else errors.push(results[5].reason.message);
   render();
   if(errors.length){app.insertAdjacentHTML('afterbegin','<div class="load-error" role="alert">一部のデータを読み込めませんでした：'+esc(errors.join(' / '))+' <button type="button" id="retry-data">再試行</button></div>');document.getElementById('retry-data').addEventListener('click',()=>location.reload());}
  });

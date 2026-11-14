@@ -27,7 +27,7 @@ input[type=search]:focus{border-color:var(--cyan)}.count{color:var(--muted);font
 </style></head><body>
 <header><div class="kicker">A FIELD GUIDE TO MUSICAL FREEDOM</div><h1>THE SOUND<br>LIBERATORS</h1><div class="subtitle">音楽のOSを書き換えた表現者たち</div>
 <p class="intro">ジャズの約束をほどき、音の境界を越え、まだ名前のない響きを探した音楽家たち。海外編と日本編を横断し、人物・名盤・演奏への入口をひとつの場所に集めたリスニング・アーカイブ。</p></header>
-<nav aria-label="メインナビゲーション"><a href="#/all" data-route="all">ALL ARTISTS</a><a href="#/world" data-route="world">WORLD</a><a href="#/japan" data-route="japan">JAPAN</a><a href="#/playlists" data-route="playlists">PLAYLISTS</a></nav>
+<nav aria-label="メインナビゲーション"><a href="#/all" data-route="all">ALL ARTISTS</a><a href="#/world" data-route="world">WORLD</a><a href="#/japan" data-route="japan">JAPAN</a><a href="#/playlists" data-route="playlists">PLAYLISTS</a><a href="#/radio" data-route="radio">NTS RADIO</a></nav>
 <main id="app" aria-live="polite"><div class="loading">音楽家のデータを読み込んでいます…</div></main>
 <div class="sources"><b>参考・探索先</b><br><a href="https://www.allmusic.com/style/free-jazz-ma0000002598/albums" target="_blank" rel="noopener">AllMusic — Free Jazz Album Highlights</a> ／ <a href="https://www.acclaimedmusic.net/genre/genre1266.htm" target="_blank" rel="noopener">Acclaimed Music — Free Jazz Albums</a><br>名盤は代表作の入口として選定。YouTubeは検索リンク形式です。</div>
 <footer>THE SOUND LIBERATORS · LISTEN BEYOND THE BOUNDARIES</footer>
@@ -54,6 +54,9 @@ input[type=search]:focus{border-color:var(--cyan)}.count{color:var(--muted);font
   const albums=(a.albums||[]).map(x=>'<li>'+esc(x)+'</li>').join('');
   app.innerHTML='<article class="detail"><a class="back-link" href="#/'+(a.region==='JAPAN'?'japan':'world')+'">← '+esc(a.regionLabel)+'へ戻る</a><div class="eyebrow" style="margin-top:28px">'+a.region+' · '+esc(instr(a))+'</div><h2>'+esc(a.name)+'</h2><div class="english">'+esc(a.name_en)+'</div><p class="profile">'+esc(a.profile)+'</p><section class="detail-panel"><h3>SELECTED ALBUMS</h3><ol class="albums">'+albums+'</ol></section><section class="detail-panel"><h3>LISTEN / WATCH</h3><a class="yt-link" href="'+esc(a.youtube_search_url)+'" target="_blank" rel="noopener">▶ YouTubeで演奏を探す ↗</a></section></article>';
  };
+ const renderRadio=()=>{
+  app.innerHTML='<section class="detail"><div class="eyebrow">NTS · LIVE RADIO</div><h2>NTS RADIO</h2><p class="profile">ロンドン、ロサンゼルスをはじめ世界各地から届く、24時間の音楽放送。2つのライブチャンネルをここから聴けます。再生ボタンを押すとストリーミングが始まります。</p><section class="detail-panel"><h3>CHANNEL 1 · LIVE</h3><p>メインのライブチャンネル</p><audio controls preload="none" style="width:100%" src="https://stream-relay-geo.ntslive.net/stream?client=direct">お使いのブラウザは音声再生に対応していません。</audio></section><section class="detail-panel"><h3>CHANNEL 2 · LIVE</h3><p>もうひとつのライブチャンネル</p><audio controls preload="none" style="width:100%" src="https://stream-relay-geo.ntslive.net/stream2?client=direct">お使いのブラウザは音声再生に対応していません。</audio></section><section class="detail-panel"><h3>EXPLORE NTS</h3><p><a class="yt-link" href="https://www.nts.live/radio" target="_blank" rel="noopener">NTS公式 Radio / 番組表・アーカイブ ↗</a></p><p><a class="yt-link" href="https://www.nts.live/" target="_blank" rel="noopener">NTS公式トップ・Infinite Mixtapes ↗</a></p></section></section>';
+ };
  const renderPlaylists=()=>{
   if(!state.playlists.length){app.innerHTML='<div class="empty">プレイリストはまだ登録されていません。</div>';return;}
   app.innerHTML=state.playlists.map(p=>'<article class="playlist-card"><div class="kicker">AFTER HOURS · '+esc(p.platform||'MUSIC')+' SELECTION</div><h2>'+esc(p.title)+'</h2><div class="subtitle">'+esc(p.subtitle||'')+'</div><p class="playlist-copy">'+esc(p.description||'')+'</p><iframe class="spotify-frame" src="'+esc(p.embed_url)+'" title="'+esc(p.title)+' — Spotify playlist" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin"></iframe><a class="playlist-link" href="'+esc(p.spotify_url)+'" target="_blank" rel="noopener">↗ Spotifyでプレイリストを開く</a></article>').join('');
@@ -61,7 +64,7 @@ input[type=search]:focus{border-color:var(--cyan)}.count{color:var(--muted);font
  const render=()=>{
   const r=route();active(r.page);
   if(r.page==='artist')renderDetail(decodeURIComponent(r.id));
-  else if(r.page==='playlists')renderPlaylists();
+  else if(r.page==='playlists')renderPlaylists();\n  else if(r.page==='radio')renderRadio();
   else renderList(['world','japan'].includes(r.page)?r.page:'all');
   window.scrollTo(0,0);
  };

@@ -38,7 +38,7 @@ input[type=search]:focus{border-color:var(--cyan)}.count{color:var(--muted);font
  const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const instr=a=>Array.isArray(a.instrument)?a.instrument.join(' / '):(a.instrument||'');
  const all=()=>[...state.world.map(a=>({...a,region:'WORLD',regionLabel:'海外編'})),...state.japan.map(a=>({...a,region:'JAPAN',regionLabel:'日本編'}))];
- const route=()=>{const p=location.hash.replace(/^#\//?/,'').split('/');return{page:p[0]||'all',id:p[1]||''};};
+ const route=()=>{const p=location.hash.replace(/^#\/?/,'').split('/');return{page:p[0]||'all',id:p[1]||''};};
  const active=page=>navLinks.forEach(a=>{if(a.dataset.route===page||(page==='artist'&&['all','world','japan'].includes(a.dataset.route)))a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
  const renderList=page=>{
   const artists=page==='world'?all().filter(a=>a.region==='WORLD'):page==='japan'?all().filter(a=>a.region==='JAPAN'):all();

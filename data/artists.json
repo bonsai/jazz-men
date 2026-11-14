@@ -1,0 +1,349 @@
+{
+  "schema_version": "1.0.0",
+  "edition": "international",
+  "language": "ja",
+  "artist_count": 20,
+  "artists": [
+    {
+      "id": "ornette-coleman",
+      "name": "オーネット・コールマン",
+      "name_en": "Ornette Coleman",
+      "instrument": [
+        "アルトサックス",
+        "ヴァイオリン"
+      ],
+      "profile": "コード進行という見えない柵を取り払い、旋律が自分の足で歩き出す場所を作った。彼の自由は無秩序ではない。互いの気配を聴き、ぶつかり、離れ、また出会うための約束だ。乾いた音色の奥にはブルースの歌心が息づき、『Lonely Woman』では孤独そのものが空間に浮かぶ。ジャズの地図を塗り替えながら、人間の声に近い旋律を最後まで手放さなかった革命家。",
+      "albums": [
+        "The Shape of Jazz to Come (1959)",
+        "Free Jazz (1961)",
+        "Science Fiction (1972)"
+      ],
+      "youtube_search": "Ornette Coleman Lonely Woman live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Ornette%20Coleman%20Lonely%20Woman%20live"
+    },
+    {
+      "id": "cecil-taylor",
+      "name": "セシル・テイラー",
+      "name_en": "Cecil Taylor",
+      "instrument": [
+        "ピアノ"
+      ],
+      "profile": "ピアノを鍵盤楽器の役割から解き放ち、打楽器の群れや嵐、建築物のような音響へ変えた。音は意味を説明せず、密集した粒子となって押し寄せ、突然ひらけた空間に光を落とす。混沌の内部には精密な呼吸と構造があり、踊り手でもあった彼の身体にはリズムが運動として宿る。ピアノの可能性を広げたというより、ピアノという言葉の意味を作り直した巨人。",
+      "albums": [
+        "Unit Structures (1966)",
+        "Conquistador! (1968)",
+        "Silent Tongues (1974)"
+      ],
+      "youtube_search": "Cecil Taylor solo piano live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Cecil%20Taylor%20solo%20piano%20live"
+    },
+    {
+      "id": "albert-ayler",
+      "name": "アルバート・アイラー",
+      "name_en": "Albert Ayler",
+      "instrument": [
+        "テナーサックス"
+      ],
+      "profile": "アイラーのサックスは、遠い土地から聞こえる祝祭の行進のようだ。軍楽隊の素朴な旋律、ゴスペルの歓喜、ブルースの痛みが、強烈なビブラートとともに空へ放たれる。荒々しい音色の中心には、誰もが口ずさめるほど単純で忘れがたい歌がある。難解さを競うのではなく、音楽を人間の祈りへ戻そうとしたのかもしれない。歓喜と悲哀、子どもの歌と終末の叫びが同じ場所に立つ。",
+      "albums": [
+        "Spiritual Unity (1964)",
+        "Spirits Rejoice (1965)",
+        "The Bells (1965)"
+      ],
+      "youtube_search": "Albert Ayler Greenwich Village live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Albert%20Ayler%20Greenwich%20Village%20live"
+    },
+    {
+      "id": "eric-dolphy",
+      "name": "エリック・ドルフィー",
+      "name_en": "Eric Dolphy",
+      "instrument": [
+        "アルトサックス",
+        "バスクラリネット",
+        "フルート"
+      ],
+      "profile": "バスクラリネットは深海から伸びる影のようにうねり、フルートは鳥の声にも機械の軋みにも聞こえる。アルトサックスは予想した着地点を軽々と飛び越える。彼は楽器がまだ語っていない言葉を探し、音域の端や息の揺らぎに新しい表情を見つけた。複雑なリズムの中にも遊び心とユーモアがある。短い生涯に残した録音は、ジャズがどれほど多彩な生き物になれるかを示す標本箱だ。",
+      "albums": [
+        "Out to Lunch! (1964)",
+        "Out There (1960)",
+        "Far Cry (1962)"
+      ],
+      "youtube_search": "Eric Dolphy Berlin 1961 live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Eric%20Dolphy%20Berlin%201961%20live"
+    },
+    {
+      "id": "rahsaan-roland-kirk",
+      "name": "ローランド・カーク",
+      "name_en": "Rahsaan Roland Kirk",
+      "instrument": [
+        "複数の管楽器",
+        "フルート"
+      ],
+      "profile": "複数のサックスを同時に吹き、鼻笛や笛、汽笛のような音まで操る。身体のすべてを楽器に変え、ステージを祝祭にする奇才だ。けれど奇抜な技の奥には、古いジャズへの深い愛情とブルースやソウルの温かな歌心がある。伝統を壊して遠ざけるのではなく、抱えきれないほど胸に詰め込み、同時に鳴らしてみせた。笑い声の隣に胸を締めつけるバラードがある。音楽は全部まとめて鳴らしていいのだと全身で語る。",
+      "albums": [
+        "The Inflated Tear (1968)",
+        "Rip, Rig and Panic (1965)",
+        "We Free Kings (1961)"
+      ],
+      "youtube_search": "Rahsaan Roland Kirk Bright Moments live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Rahsaan%20Roland%20Kirk%20Bright%20Moments%20live"
+    },
+    {
+      "id": "john-coltrane",
+      "name": "ジョン・コルトレーン",
+      "name_en": "John Coltrane",
+      "instrument": [
+        "テナーサックス",
+        "ソプラノサックス"
+      ],
+      "profile": "練習を祈りに、音階を旅路に変えた探求者。猛烈な音の連なりの中心には、人はどこまで自分を超えられるのかという深い問いがある。『A Love Supreme』では音楽が感謝の言葉となり、『Ascension』では複数の奏者の声が巨大な祈りの渦をつくる。後期の激しさは破壊だけを目指さない。未知の向こうにある調和を探す切実な運動だ。完成した答えではなく、問い続ける姿勢を残した。",
+      "albums": [
+        "A Love Supreme (1965)",
+        "Ascension (1966)",
+        "Interstellar Space (1967)"
+      ],
+      "youtube_search": "John Coltrane A Love Supreme live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=John%20Coltrane%20A%20Love%20Supreme%20live"
+    },
+    {
+      "id": "pharoah-sanders",
+      "name": "ファラオ・サンダース",
+      "name_en": "Pharoah Sanders",
+      "instrument": [
+        "テナーサックス"
+      ],
+      "profile": "倍音を含んだ叫び、反復するリズム、長く伸びる旋律。サンダースのテナーは遠くから近づく風のように始まり、やがて大地を揺らす熱になる。激しいフリージャズの語法を持ちながら、人を包み込む温度がある。『Karma』の長い旅では、ひとつの音が何度も姿を変え、聴き手の時間感覚をゆっくり溶かしていく。宇宙を遠い場所ではなく、呼吸と声の中にあるものとして響かせた。",
+      "albums": [
+        "Karma (1969)",
+        "Tauhid (1967)",
+        "Thembi (1971)"
+      ],
+      "youtube_search": "Pharoah Sanders The Creator Has a Master Plan live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Pharoah%20Sanders%20The%20Creator%20Has%20a%20Master%20Plan%20live"
+    },
+    {
+      "id": "alice-coltrane",
+      "name": "アリス・コルトレーン",
+      "name_en": "Alice Coltrane",
+      "instrument": [
+        "ハープ",
+        "ピアノ",
+        "オルガン"
+      ],
+      "profile": "ハープのきらめき、オルガンの持続音、祈るようなピアノの反復。アリスはジャズの即興にインド音楽や精神世界の思想を重ね、音を瞑想の場へ変えた。ひとつの響きに身をゆだねる時間を大切にし、旋律を目的地ではなく意識を整える道にする。伴侶の名だけでは語りきれない、独創的な作曲家であり演奏家であり、精神の建築家。",
+      "albums": [
+        "Journey in Satchidananda (1971)",
+        "Ptah, the El Daoud (1970)",
+        "Universal Consciousness (1971)"
+      ],
+      "youtube_search": "Alice Coltrane Journey in Satchidananda live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Alice%20Coltrane%20Journey%20in%20Satchidananda%20live"
+    },
+    {
+      "id": "sun-ra",
+      "name": "サン・ラー",
+      "name_en": "Sun Ra",
+      "instrument": [
+        "ピアノ",
+        "シンセサイザー",
+        "作曲"
+      ],
+      "profile": "土星から来たと名乗り、宇宙を音楽にした。奇抜な衣装や神話は、社会が押しつける役割や歴史から自由になるための、もうひとつの世界の設計図だった。ビッグバンドのスウィング、フリージャズ、電子鍵盤、儀式のような合唱が同じ舞台で出会う。宇宙は逃避先ではなく、まだ決められていない可能性の象徴。聴く者は未知の惑星へ向かう乗組員になる。",
+      "albums": [
+        "The Heliocentric Worlds of Sun Ra (1965)",
+        "The Magic City (1966)",
+        "Space Is the Place (1973)"
+      ],
+      "youtube_search": "Sun Ra Arkestra Space Is the Place live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Sun%20Ra%20Arkestra%20Space%20Is%20the%20Place%20live"
+    },
+    {
+      "id": "don-cherry",
+      "name": "ドン・チェリー",
+      "name_en": "Don Cherry",
+      "instrument": [
+        "ポケットトランペット",
+        "コルネット"
+      ],
+      "profile": "小さなポケットトランペットを手に、世界中の音楽が出会う広場をつくった。フリージャズの扉を開き、その後はアフリカ、インド、中東、北欧の響きを自在に結びつける。強く主張するより、耳を開いて人と交わることに向かう。音楽を国やジャンルの所有物にせず、違う文化のあいだに橋を架ける。子どもの好奇心と老賢者の静けさが同居する音楽家。",
+      "albums": [
+        "Complete Communion (1966)",
+        "Symphony for Improvisers (1966)",
+        "Eternal Rhythm (1969)"
+      ],
+      "youtube_search": "Don Cherry Organic Music Society live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Don%20Cherry%20Organic%20Music%20Society%20live"
+    },
+    {
+      "id": "anthony-braxton",
+      "name": "アンソニー・ブラクストン",
+      "name_en": "Anthony Braxton",
+      "instrument": [
+        "サックス",
+        "作曲"
+      ],
+      "profile": "即興の自由と作曲の設計図を対立させず、両方を同じ机の上に広げた。図形や記号を使った独自の作曲体系を築き、ジャズ、現代音楽、実験音楽の境界を横断する。自由を気分に任せず、自由が生まれる仕組みそのものを発明しようとした。ひとつの演奏が複数の可能性を持ち、奏者はその場で選び、応答し、組み替えていく。音楽を研究し、遊び、更新し続ける終わりのない実験室。",
+      "albums": [
+        "For Alto (1969)",
+        "Creative Orchestra Music 1976 (1976)",
+        "New York, Fall 1974 (1974)"
+      ],
+      "youtube_search": "Anthony Braxton quartet live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Anthony%20Braxton%20quartet%20live"
+    },
+    {
+      "id": "milford-graves",
+      "name": "ミルフォード・グレイヴス",
+      "name_en": "Milford Graves",
+      "instrument": [
+        "ドラム",
+        "パーカッション"
+      ],
+      "profile": "ドラムは拍を刻む道具ではなく、生命のリズムを聴き取る器官だった。心拍、呼吸、歩行、動物の動き。身体の周期と世界の振動を結びつけ、演奏を生きた研究へ変えていく。激しく予測できないドラミングには、有機的な脈動がある。医療や生体信号への関心も深く、音楽と科学、身体と芸術の境界を行き来した。リズムを数えるのではなく、リズムが生まれる瞬間に立ち会う打楽器奏者。",
+      "albums": [
+        "Percussion Ensemble (1965)",
+        "In Concert at Yale University (1976)",
+        "Babi (1973)"
+      ],
+      "youtube_search": "Milford Graves solo percussion live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Milford%20Graves%20solo%20percussion%20live"
+    },
+    {
+      "id": "miles-davis",
+      "name": "マイルス・デイヴィス",
+      "name_en": "Miles Davis",
+      "instrument": [
+        "トランペット"
+      ],
+      "profile": "ひとつの様式に安住せず、時代が変わるたびに音楽の未来を先取りした。クール、モード、エレクトリック、ファンク。若い才能を集め、バンドそのものを実験装置に変える。『Bitches Brew』では電気楽器と複数のリズムが渦を巻き、ジャズとロックの境界が溶けた。饒舌ではないトランペットは、短い音と沈黙で空間の意味を変える。次の時代が追いかける場所を何度も作り出した。",
+      "albums": [
+        "In a Silent Way (1969)",
+        "Bitches Brew (1970)",
+        "On the Corner (1972)"
+      ],
+      "youtube_search": "Miles Davis Isle of Wight 1970 live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Miles%20Davis%20Isle%20of%20Wight%201970%20live"
+    },
+    {
+      "id": "marshall-allen",
+      "name": "マーシャル・アレン",
+      "name_en": "Marshall Allen",
+      "instrument": [
+        "アルトサックス",
+        "フルート"
+      ],
+      "profile": "サン・ラーの宇宙船を長い年月にわたって操縦し続けた音楽家。鋭いアルトサックスは鳥の声のように跳ね、電子音と見分けがつかない異形の響きを放つ。フリージャズの奔放さと、アンサンブルを支える職人的な耳が共存する。サン・ラーの神話を博物館に閉じ込めず、現在進行形の音楽として更新してきた。前衛とは過去の様式ではなく、未来へ向かう態度なのだと示す。",
+      "albums": [
+        "Rocket Number Nine Take Off for the Planet Venus (1960)",
+        "The Heliocentric Worlds of Sun Ra",
+        "Ghost Horizons (2024)"
+      ],
+      "youtube_search": "Marshall Allen Sun Ra Arkestra live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Marshall%20Allen%20Sun%20Ra%20Arkestra%20live"
+    },
+    {
+      "id": "archie-shepp",
+      "name": "アーチー・シェップ",
+      "name_en": "Archie Shepp",
+      "instrument": [
+        "テナーサックス",
+        "声"
+      ],
+      "profile": "サックスの音だけでなく、歴史の声を刻む。ブルース、ゴスペル、アフリカの記憶、黒人解放運動への応答。フリージャズを抽象的な実験にとどめず、社会の痛みや誇りを語る表現へ押し広げた。荒々しいブロウの直後に深く歌うバラードが現れ、怒りと優しさが同じ人間の中にあることを思い出させる。自由とは誰かの痛みを聴き取ることでもある。",
+      "albums": [
+        "Fire Music (1965)",
+        "Four for Trane (1964)",
+        "The Magic of Ju-Ju (1967)"
+      ],
+      "youtube_search": "Archie Shepp Montreux live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Archie%20Shepp%20Montreux%20live"
+    },
+    {
+      "id": "peter-brotzmann",
+      "name": "ペーター・ブロッツマン",
+      "name_en": "Peter Brötzmann",
+      "instrument": [
+        "テナーサックス",
+        "アルトサックス",
+        "クラリネット"
+      ],
+      "profile": "磨かれた表面を一気に破るような音。息を吹き込むというより、身体の奥の圧力を管へ叩きつける。戦後ヨーロッパの前衛芸術と即興音楽の空気をまとい、荒々しい自由を切り開いた。『Machine Gun』は集団即興がどこまで強烈な音響になりうるかを示す記念碑だ。怒号の奥には仲間の音を聴き、隙間をつくり、瞬間の構造を組み上げる集中力がある。安全地帯を必要としない表現者。",
+      "albums": [
+        "Machine Gun (1968)",
+        "Nipples (1969)",
+        "The Catch of a Ghost (1977)"
+      ],
+      "youtube_search": "Peter Brotzmann Machine Gun live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Peter%20Brotzmann%20Machine%20Gun%20live"
+    },
+    {
+      "id": "john-zorn",
+      "name": "ジョン・ゾーン",
+      "name_en": "John Zorn",
+      "instrument": [
+        "アルトサックス",
+        "作曲"
+      ],
+      "profile": "音楽の境界線を引くこと自体を疑う。フリージャズ、ノイズ、ハードコア、映画音楽、現代音楽、ユダヤの伝統を衝突させ、予想もしない物語を生む。数秒ごとに場面が切り替わり、聴き手は編集者のように意味を組み立てる。過激さの裏には膨大な音楽史への知識と、仲間の才能を引き出す眼差しがある。ジャンルを混ぜるだけでなく、分類が生まれる前の音楽の可能性へ戻ろうとする実験家。",
+      "albums": [
+        "Naked City (1990)",
+        "The Big Gundown (1986)",
+        "Spillane (1987)"
+      ],
+      "youtube_search": "John Zorn Masada live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=John%20Zorn%20Masada%20live"
+    },
+    {
+      "id": "hermeto-pascoal",
+      "name": "エルメート・パスコアール",
+      "name_en": "Hermeto Pascoal",
+      "instrument": [
+        "ピアノ",
+        "フルート",
+        "多楽器"
+      ],
+      "profile": "音楽は楽器の中だけに住んでいない。鳥の声、水の音、瓶の響き、動物の鳴き声、仲間の笑い声。世界にあるものは、耳を澄ませば音楽の入口になる。ブラジル北東部のリズムや民俗的な旋律を土台に、複雑な和声と変拍子を自在に編み上げる。奇想天外な瞬間にも緻密な設計がある。自然と人間が同じ音楽の共同制作者になれると気づかせる、ブラジルの音楽的宇宙。",
+      "albums": [
+        "Slaves Mass (1977)",
+        "Hermeto (1970)",
+        "Mundo Verde Esperança (2003)"
+      ],
+      "youtube_search": "Hermeto Pascoal Montreux live",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Hermeto%20Pascoal%20Montreux%20live"
+    },
+    {
+      "id": "egberto-gismonti",
+      "name": "エグベルト・ジスモンチ",
+      "name_en": "Egberto Gismonti",
+      "instrument": [
+        "ギター",
+        "ピアノ"
+      ],
+      "profile": "ブラジルの大地から出発しながら、どこにも属さない風景へ旅をする。ギターは森のざわめきのように響き、ピアノは複雑なリズムを抱えたまま遠い地平へ広がる。民俗音楽の旋律、クラシックの構築性、ジャズの即興が自然に溶け合う。多弦ギターでひとりの演奏にもオーケストラの奥行きを生み出した。技巧の先に残るのは故郷の懐かしさと、まだ見ぬ土地への憧れ。",
+      "albums": [
+        "Dança das Cabeças (1977)",
+        "Sol do Meio Dia (1978)",
+        "Alma (1984)"
+      ],
+      "youtube_search": "Egberto Gismonti live guitar piano",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Egberto%20Gismonti%20live%20guitar%20piano"
+    },
+    {
+      "id": "airto-moreira",
+      "name": "アイアート・モレイラ",
+      "name_en": "Airto Moreira",
+      "instrument": [
+        "パーカッション",
+        "ドラム"
+      ],
+      "profile": "リズムを背景から解放し、音楽の風景そのものにした。ブラジルの打楽器文化を携え、ジャズやロック、フュージョンの現場へ入り込む。小さな打楽器の粒、声、息、足音のような音で、演奏の隙間に生命のざわめきを吹き込む。マイルスやチック・コリアらとの仕事を通じ、ブラジルの響きが世界のジャズを変える瞬間に立ち会った。小さな音を選び、全体の呼吸を変えることも革命になる。",
+      "albums": [
+        "Seeds on the Ground (1971)",
+        "Fingers (1973)",
+        "Natural Feelings (1970)"
+      ],
+      "youtube_search": "Airto Moreira live percussion",
+      "youtube_search_url": "https://www.youtube.com/results?search_query=Airto%20Moreira%20live%20percussion"
+    }
+  ]
+}

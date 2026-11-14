@@ -40,6 +40,7 @@ jobs:
               Path("data/artists.json"),
               Path("japan/artists.json"),
               Path("data/playlists.json"),
+              Path("data/videos.json"),
           ]
           for path in files:
               with path.open(encoding="utf-8") as f:

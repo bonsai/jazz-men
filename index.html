@@ -35,7 +35,7 @@ input[type=search]:focus{border-color:var(--cyan)}.count{color:var(--muted);font
 <section class="sources"><strong>参考・探索先</strong><br><a href="https://www.allmusic.com/style/free-jazz-ma0000002598/albums" target="_blank" rel="noopener">AllMusic — Free Jazz Album Highlights</a> ／ <a href="https://www.acclaimedmusic.net/genre/genre1266.htm" target="_blank" rel="noopener">Acclaimed Music — Free Jazz Albums</a><br>名盤は代表作の入口として選定。YouTubeは検索リンク形式です。</section>
 <script>
 (()=>{
- const esc=s=>String(s??'').replace(/&/g,'&').replace(/</g,'<').replace(/>/g,'>').replace(/"/g,'"');
+ const esc=s=>String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
  const app=document.getElementById('app'), navLinks=[...document.querySelectorAll('[data-route]')];
  const state={world:[],japan:[],playlists:[],videos:[],videos2:[],tracks:[],youtubeSeeds:[],youtubeSeedsData:null,query:''};
  const route=()=>{const h=(location.hash||'#/all').slice(2)||'all';const [page,...rest]=h.split('/');return{page,id:rest.join('/')};};
@@ -116,6 +116,20 @@ input[type=search]:focus{border-color:var(--cyan)}.count{color:var(--muted);font
   if(results[4].status==='fulfilled')state.videos2=results[4].value.videos||[];else errors.push(results[4].reason.message);
   if(results[5].status==='fulfilled'){state.youtubeSeeds=results[5].value.playlists||[];state.youtubeSeedsData=results[5].value;}else errors.push(results[5].reason.message);
   if(results[6].status==='fulfilled')state.tracks=results[6].value.tracks||[];else errors.push(results[6].reason.message);
+  if(!state.tracks||state.tracks.length<10){
+    const map=new Map();
+    const upsert=(rec,shelf)=>{
+      if(!rec||!rec.id)return;
+      const prev=map.get(rec.id)||{id:rec.id,shelves:[]};
+      const merged={...prev,...Object.fromEntries(Object.entries(rec).filter(([,v])=>v!=null&&v!==''))};
+      const shelves=new Set([...(prev.shelves||[]),...(rec.shelves||[]),shelf].filter(Boolean));
+      merged.shelves=[...shelves];
+      map.set(rec.id,merged);
+    };
+    (state.videos||[]).forEach(v=>upsert(v,'video'));
+    (state.videos2||[]).forEach(v=>upsert(v,'video2'));
+    state.tracks=[...map.values()];
+  }
   render();
   if(errors.length){app.insertAdjacentHTML('afterbegin','<div class="load-error" role="alert">一部のデータを読み込めませんでした：'+esc(errors.join(' / '))+' <button type="button" id="retry-data">再試行</button></div>');document.getElementById('retry-data').addEventListener('click',()=>location.reload());}
  });

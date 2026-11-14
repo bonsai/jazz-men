@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0.0",
+  "concepts": [
+    {
+      "id": "free-improvisation",
+      "label": "Free Improvisation",
+      "label_ja": "フリー・インプロヴィゼーション",
+      "category": "practice",
+      "definition": "事前に固定された和声進行や形式に依存せず、演奏者の相互作用から音楽を組み立てる実践。",
+      "aliases": [
+        "自由即興",
+        "フリー・インプロヴィゼーション"
+      ],
+      "sources": []
+    },
+    {
+      "id": "collective-improvisation",
+      "label": "Collective Improvisation",
+      "label_ja": "集団即興",
+      "category": "practice",
+      "definition": "複数の演奏者が互いの音を聴き、応答しながら全体の音楽を同時に形づくる実践。",
+      "aliases": [
+        "集団即興演奏"
+      ],
+      "sources": []
+    },
+    {
+      "id": "spiritual-jazz",
+      "label": "Spiritual Jazz",
+      "label_ja": "スピリチュアル・ジャズ",
+      "category": "genre",
+      "definition": "精神性や祈り、瞑想、文化的ルーツへの探求を音楽表現に結びつけるジャズの潮流。",
+      "aliases": [
+        "スピリチュアルジャズ"
+      ],
+      "sources": []
+    },
+    {
+      "id": "noise",
+      "label": "Noise",
+      "label_ja": "ノイズ",
+      "category": "sound",
+      "definition": "通常の楽音・旋律・リズムの枠外にある音響や、その質感・強度を表現素材として扱うこと。",
+      "aliases": [
+        "ノイズ音楽"
+      ],
+      "sources": []
+    },
+    {
+      "id": "extended-technique",
+      "label": "Extended Technique",
+      "label_ja": "拡張奏法",
+      "category": "technique",
+      "definition": "楽器の標準的な奏法を拡張し、特殊な発音・音色・身体操作によって新しい音響を生み出す技法。",
+      "aliases": [
+        "特殊奏法",
+        "拡張奏法"
+      ],
+      "sources": []
+    },
+    {
+      "id": "drone",
+      "label": "Drone",
+      "label_ja": "ドローン",
+      "category": "sound",
+      "definition": "持続音や反復音を中心に、時間の流れや音の重なりを探る音響的な構成。",
+      "aliases": [
+        "持続音"
+      ],
+      "sources": []
+    },
+    {
+      "id": "electronic-improvisation",
+      "label": "Electronic Improvisation",
+      "label_ja": "電子音響即興",
+      "category": "practice",
+      "definition": "電子楽器や電気的な処理を用い、その場の操作と相互作用から音響を組み立てる即興実践。",
+      "aliases": [
+        "電子即興"
+      ],
+      "sources": []
+    },
+    {
+      "id": "afrofuturism",
+      "label": "Afrofuturism",
+      "label_ja": "アフロフューチャリズム",
+      "category": "philosophy",
+      "definition": "アフリカ系ディアスポラの文化・歴史・想像力を、未来やテクノロジーの構想と結びつける表現・思想。",
+      "aliases": [
+        "アフロフューチャリズム"
+      ],
+      "sources": []
+    }
+  ]
+}

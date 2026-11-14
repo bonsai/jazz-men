@@ -55,7 +55,37 @@ jobs:
               print(f"{path}: {len(artists)} artists")
           PY
 
-      - name: Validate Music Atlas data
+      - name: Install pinned JSON Schema validator
+        run: python -m pip install jsonschema==4.23.0
+
+      - name: Validate Music Atlas JSON Schema
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from jsonschema import Draft202012Validator, FormatChecker
+
+          schema = json.loads(Path("schema/atlas.schema.json").read_text(encoding="utf-8"))
+          validator = Draft202012Validator(schema, format_checker=FormatChecker())
+          mapping = {
+              "data/atlas/places.json": "places",
+              "data/atlas/eras.json": "eras",
+              "data/atlas/concepts.json": "concepts",
+              "data/atlas/works.json": "works",
+          }
+          for filename, key in mapping.items():
+              document = json.loads(Path(filename).read_text(encoding="utf-8"))
+              validator.validate({key: document})
+              print(f"JSON Schema OK: {filename}")
+          relation_schema = json.loads(Path("schema/atlas.schema.json").read_text(encoding="utf-8"))
+          row_validator = Draft202012Validator(relation_schema["$defs"]["relation"], format_checker=FormatChecker())
+          for number, line in enumerate(Path("data/atlas/relations.jsonl").read_text(encoding="utf-8").splitlines(), 1):
+              if line.strip():
+                  row_validator.validate(json.loads(line))
+          print("JSON Schema OK: data/atlas/relations.jsonl")
+          PY
+
+      - name: Validate Music Atlas references
         run: python scripts/validate_atlas.py
 
       - name: Configure GitHub Pages

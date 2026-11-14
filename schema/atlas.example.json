@@ -1,0 +1,58 @@
+{
+  "places": {
+    "schema_version": "1.0.0",
+    "places": []
+  },
+  "eras": {
+    "schema_version": "1.0.0",
+    "eras": [
+      {
+        "id": "1960s",
+        "label": "1960年代",
+        "start_year": 1960,
+        "end_year": 1969,
+        "description": "年代区分のテストデータ。歴史的説明ではない。"
+      }
+    ]
+  },
+  "concepts": {
+    "schema_version": "1.0.0",
+    "concepts": [
+      {
+        "id": "free-improvisation",
+        "label": "Free Improvisation",
+        "label_ja": "フリー・インプロヴィゼーション",
+        "category": "practice",
+        "definition": "事前に固定された形式に依存せず、相互作用から音楽を組み立てる実践。",
+        "aliases": [],
+        "sources": []
+      }
+    ]
+  },
+  "works": {
+    "schema_version": "1.0.0",
+    "works": [
+      {
+        "id": "fixture-example-work",
+        "title": "Fixture Example Work",
+        "artist_ids": [
+          "ornette-coleman"
+        ],
+        "release_year": null,
+        "recording_year": null,
+        "place_ids": [],
+        "concept_ids": [
+          "free-improvisation"
+        ],
+        "source_urls": []
+      }
+    ]
+  },
+  "relation": {
+    "source": "artist:ornette-coleman",
+    "relation": "associated_with",
+    "target": "concept:free-improvisation",
+    "evidence": "editorial",
+    "source_urls": []
+  }
+}
